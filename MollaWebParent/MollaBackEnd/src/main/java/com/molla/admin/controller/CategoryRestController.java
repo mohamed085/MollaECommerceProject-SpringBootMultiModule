@@ -1,4 +1,4 @@
-package com.shopme.admin.controller;
+package com.molla.admin.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

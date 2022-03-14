@@ -85,6 +85,6 @@ public class BrandService implements IBrandService{
 
 	@Override
 	public void listByPage(int pageNum, PagingAndSortingHelper helper) {
-		helper.listEntities(pageNum, BRANDS_PER_PAGE, repo);
+		helper.	listEntities(pageNum, BRANDS_PER_PAGE, repo);
 	}
 }
