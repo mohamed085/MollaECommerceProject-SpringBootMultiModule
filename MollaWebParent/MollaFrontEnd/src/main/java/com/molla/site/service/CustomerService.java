@@ -62,12 +62,19 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public boolean verify(String verificationCode) {
-        return false;
+        Customer customer = customerRepo.findByVerificationCode(verificationCode);
+
+        if (customer == null || customer.isEnabled()) {
+            return false;
+        } else {
+            customerRepo.enable(customer.getId());
+            return true;
+        }
     }
 
     @Override
     public Customer getCustomerByEmail(String email) {
-        return null;
+        return customerRepo.findByEmail(email);
     }
 
     @Override
