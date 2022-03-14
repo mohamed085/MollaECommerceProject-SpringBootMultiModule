@@ -74,10 +74,8 @@ public class CustomerService implements ICustomerService{
 
 	@Override
 	public void save(Customer customerInForm) {
-		
 		Customer customerInDB = customerRepo.findById(customerInForm.getId()).get();
-		
-		
+
 		if (!customerInForm.getPassword().isEmpty()) {
 			String encodedPassword = passwordEncoder.encode(customerInForm.getPassword());
 			customerInForm.setPassword(encodedPassword);			

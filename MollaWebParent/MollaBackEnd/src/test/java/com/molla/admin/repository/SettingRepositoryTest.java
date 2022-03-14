@@ -2,6 +2,7 @@ package com.molla.admin.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -47,6 +48,24 @@ class SettingRepositoryTest {
         repo.saveAll(List.of(currencyId, symbol, symbolPosition, decimalPointType,
                 decimalDigits, thousandsPointType));
 
+    }
+
+    @Test
+    public void testCreateEmailSettings() {
+        List<Setting> settings = Arrays.asList(
+                new Setting("MAIL_HOST", "smtp.gmail.com", SettingCategory.MAIL_SERVER),
+                new Setting("MAIL_PORT", "587", SettingCategory.MAIL_SERVER),
+                new Setting("MAIL_USERNAME", "Mohamed085555@gmail.com", SettingCategory.MAIL_SERVER),
+                new Setting("MAIL_PASSWORD", "", SettingCategory.MAIL_SERVER),
+                new Setting("SMTP_AUTH", "true", SettingCategory.MAIL_SERVER),
+                new Setting("SMTP_SECURED", "true", SettingCategory.MAIL_SERVER),
+                new Setting("MAIL_FROM", "Molla.company@gmail.com", SettingCategory.MAIL_SERVER),
+                new Setting("MAIL_SENDER_NAME", "Molla Company", SettingCategory.MAIL_SERVER),
+                new Setting("CUSTOMER_VERIFY_SUBJECT", "", SettingCategory.MAIL_TEMPLATES),
+                new Setting("CUSTOMER_VERIFY_CONTENT", "", SettingCategory.MAIL_TEMPLATES)
+        );
+
+        repo.saveAll(settings);
     }
 
     @Test
