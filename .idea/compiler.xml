@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MollaFrontEnd" />
+        <module name="MollaCommon" />
+        <module name="MollaBackEnd" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="MollaBackEnd" target="11" />
+      <module name="MollaCommon" target="11" />
+      <module name="MollaECommerceProject" target="1.5" />
+      <module name="MollaFrontEnd" target="11" />
+      <module name="MollaWebParent" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MollaBackEnd" options="-parameters" />
+      <module name="MollaCommon" options="-parameters" />
+      <module name="MollaFrontEnd" options="-parameters" />
+    </option>
+  </component>
+</project>
