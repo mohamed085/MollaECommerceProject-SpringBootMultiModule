@@ -1,252 +1,73 @@
-2022-03-14 13:41:27.042  INFO 13460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-14 13:41:27.192  INFO 13460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-03-14 13:41:27.211  INFO 13460 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-03-14 13:41:29.542  WARN 13460 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
-    alter table brands_categories 
-       add constraint FK58ksmicdguvu4d7b6yglgqvxo 
-       foreign key (brand_id) 
-       references brands (id)" via JDBC Statement
+2022-03-14 14:21:44.231  WARN 12672 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-14 14:21:44.232  INFO 12672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2022-03-14 14:21:44.233  WARN 12672 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-14 14:21:44.234  INFO 12672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-03-14 14:21:44.234  WARN 12672 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-14 14:21:44.234  INFO 12672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2022-03-14 14:21:44.235  WARN 12672 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-14 14:21:44.235  INFO 12672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-03-14 14:21:44.288  INFO 12672 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-14 14:21:44.880  INFO 12672 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-14 14:21:46.347  INFO 12672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-14 14:21:46.401  INFO 12672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MollaAdmin'
+2022-03-14 14:21:46.421  INFO 12672 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Started MollaBackEndApplication in 12.522 seconds (JVM running for 16.334)
+2022-03-14 14:21:54.509  INFO 12672 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-14 14:21:54.511  INFO 12672 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-14 14:21:54.513  INFO 12672 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-03-14 14:21:54.735  WARN 12672 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [182] milliseconds.
+2022-03-14 14:22:07.753  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listFirstPage is started
+2022-03-14 14:22:07.754  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listFirstPage | sortDir : null
+2022-03-14 14:22:07.754  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage is started
+2022-03-14 14:22:07.920  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | listCategories : [Computers, --Computer Components, ----CPU Processors Unit, ----Graphic Cards, ----Internal Hard Drives, ----Internal Optical Drives, ----Memory, ----Motherboard, ----Network Cards, ----Power Supplies, ----Solid State Drives, ----Sound Cards, --Desktops, --Laptops, --Tablets, Electronics, --Camera & Photo, ----Bags & Cases, ----Digital Cameras, ----Flashes, ----Lenses, ----Tripods & Monopods, --Cell Phones & Accessories, ----Accessories, ------Cables & Adapters, ------Cases, ------Headphones, ------MicroSD Cards, ------Stands, ----Carrier Cell Phones, ----Unlocked Cell Phones]
+2022-03-14 14:22:07.921  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | reverseSortDir : desc
+2022-03-14 14:22:07.921  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | totalPages : 1
+2022-03-14 14:22:07.922  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | totalItems : 2
+2022-03-14 14:22:07.922  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | currentPage : 1
+2022-03-14 14:22:07.923  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.CategoryController  : CategoryController | listByPage | sortDir : asc
+2022-03-14 14:22:12.114  INFO 12672 --- [http-nio-8080-exec-7] c.molla.admin.controller.UserController  : UserController | listFirstPage is started
+2022-03-14 14:22:12.149  INFO 12672 --- [http-nio-8080-exec-4] c.molla.admin.controller.UserController  : UserController | listByPage is started
+2022-03-14 14:22:12.153  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities is started
+2022-03-14 14:22:12.153  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable is started
+2022-03-14 14:22:12.154  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | sort : firstName: ASC
+2022-03-14 14:22:12.154  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageNum - 1 : 0
+2022-03-14 14:22:12.155  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageSize : 4
+2022-03-14 14:22:12.191  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities | page : Page 1 of 6 containing com.molla.common.entity.User instances
+2022-03-14 14:22:12.191  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities | pageNum : 1
+2022-03-14 14:22:12.191  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes is started
+2022-03-14 14:22:12.192  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | startCount : 1
+2022-03-14 14:22:12.192  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 4
+2022-03-14 14:22:12.192  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | page.getTotalElements() : 24
+2022-03-14 14:22:12.192  INFO 12672 --- [http-nio-8080-exec-4] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 4
+2022-03-14 14:22:12.215 ERROR 12672 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/MollaAdmin] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
-    alter table brands_categories 
-       add constraint FK58ksmicdguvu4d7b6yglgqvxo 
-       foreign key (brand_id) 
-       references brands (id)" via JDBC Statement
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:581) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:526) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:452) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:263) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:123) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:192) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:81) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.16.jar:5.3.16]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.16.jar:5.3.16]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.16.jar:5.3.16]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.16.jar:5.3.16]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.4.jar:2.6.4]
-	at com.molla.admin.MollaBackEndApplication.main(MollaBackEndApplication.java:12) ~[classes/:na]
+java.lang.NullPointerException: null
+	at com.molla.admin.paging.PagingAndSortingHelper.updateModelAttributes(PagingAndSortingHelper.java:52) ~[classes/:na]
+	at com.molla.admin.paging.PagingAndSortingHelper.listEntities(PagingAndSortingHelper.java:84) ~[classes/:na]
+	at com.molla.admin.service.UserService.listByPage(UserService.java:126) ~[classes/:na]
+	at com.molla.admin.service.UserService$$FastClassBySpringCGLIB$$397a61d6.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.16.jar:5.3.16]
+	at com.molla.admin.service.UserService$$EnhancerBySpringCGLIB$$1f74646d.listByPage(<generated>) ~[classes/:na]
+	at com.molla.admin.controller.UserController.listByPage(UserController.java:59) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.4.jar:2.6.4]
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`shopme`.`#sql-13cc_2b5`, CONSTRAINT `FK58ksmicdguvu4d7b6yglgqvxo` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`id`))
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
-	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.5.Final.jar:5.6.5.Final]
-	... 38 common frames omitted
-
-2022-03-14 13:41:29.790  INFO 13460 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-03-14 13:41:29.811  INFO 13460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-03-14 13:41:29.931  WARN 13460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-03-14 13:41:30.912  WARN 13460 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-14 13:41:30.913  INFO 13460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
-2022-03-14 13:41:30.914  WARN 13460 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-14 13:41:30.914  INFO 13460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
-2022-03-14 13:41:30.914  WARN 13460 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-14 13:41:30.914  INFO 13460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
-2022-03-14 13:41:30.914  WARN 13460 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-14 13:41:30.914  INFO 13460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
-2022-03-14 13:41:30.951  INFO 13460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-03-14 13:41:31.248  INFO 13460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-03-14 13:41:32.048  INFO 13460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-03-14 13:41:32.089  INFO 13460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MollaAdmin'
-2022-03-14 13:41:32.100  INFO 13460 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Started MollaBackEndApplication in 9.129 seconds (JVM running for 11.321)
-2022-03-14 13:41:50.916  INFO 13460 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-14 13:41:50.917  INFO 13460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-14 13:41:50.921  INFO 13460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-03-14 13:41:51.263  WARN 13460 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [279] milliseconds.
-2022-03-14 13:41:56.284 ERROR 13460 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
-
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: org.attoparser.ParseException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	... 95 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:151) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.extras.springsecurity5.dialect.processor.AuthenticationAttrProcessor.doProcess(AuthenticationAttrProcessor.java:66) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	... 97 common frames omitted
-Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.fullname' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'principal.fullname' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	... 115 common frames omitted
-
-2022-03-14 13:41:56.296 ERROR 13460 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/MollaAdmin] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
-
-org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.fullname' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'principal.fullname' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.extras.springsecurity5.dialect.processor.AuthenticationAttrProcessor.doProcess(AuthenticationAttrProcessor.java:66) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
@@ -334,19 +155,50 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2022-03-14 13:41:56.689 ERROR 13460 --- [http-nio-8080-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-7] Exception processing template "error/500": An error happened during template parsing (template: "class path resource [templates/error/500.html]")
+2022-03-14 14:25:42.116  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.BrandController     : BrandController | listByPage is started
+2022-03-14 14:25:42.128  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.BrandController     : BrandController | listByPage is started
+2022-03-14 14:25:42.137  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities is started
+2022-03-14 14:25:42.137  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable is started
+2022-03-14 14:25:42.138  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | sort : name: ASC
+2022-03-14 14:25:42.138  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageNum - 1 : 0
+2022-03-14 14:25:42.138  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageSize : 10
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities | page : Page 1 of 0 containing UNKNOWN instances
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | listEntities | pageNum : 1
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes is started
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | startCount : 1
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 10
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | page.getTotalElements() : 0
+2022-03-14 14:25:42.167  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 0
+2022-03-14 14:25:42.170 ERROR 12672 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/MollaAdmin] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+java.lang.NullPointerException: null
+	at com.molla.admin.paging.PagingAndSortingHelper.updateModelAttributes(PagingAndSortingHelper.java:52) ~[classes/:na]
+	at com.molla.admin.paging.PagingAndSortingHelper.listEntities(PagingAndSortingHelper.java:84) ~[classes/:na]
+	at com.molla.admin.service.BrandService.listByPage(BrandService.java:88) ~[classes/:na]
+	at com.molla.admin.service.BrandService$$FastClassBySpringCGLIB$$c3e8d142.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.16.jar:5.3.16]
+	at com.molla.admin.service.BrandService$$EnhancerBySpringCGLIB$$695ab631.listByPage(<generated>) ~[classes/:na]
+	at com.molla.admin.controller.BrandController.listByPage(BrandController.java:178) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
@@ -355,21 +207,20 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -387,14 +238,18 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -406,20 +261,18 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
@@ -432,73 +285,56 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: org.attoparser.ParseException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	... 94 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:151) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.extras.springsecurity5.dialect.processor.AuthenticationAttrProcessor.doProcess(AuthenticationAttrProcessor.java:66) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	... 96 common frames omitted
-Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.fullname' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'principal.fullname' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	... 114 common frames omitted
 
-2022-03-14 13:41:56.691 ERROR 13460 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] threw exception
+2022-03-14 14:25:43.393  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listFirstPage is started
+2022-03-14 14:25:43.393  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listFirstPage | sortDir : null
+2022-03-14 14:25:43.393  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage is started
+2022-03-14 14:25:43.478  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | listCategories : [Computers, --Computer Components, ----CPU Processors Unit, ----Graphic Cards, ----Internal Hard Drives, ----Internal Optical Drives, ----Memory, ----Motherboard, ----Network Cards, ----Power Supplies, ----Solid State Drives, ----Sound Cards, --Desktops, --Laptops, --Tablets, Electronics, --Camera & Photo, ----Bags & Cases, ----Digital Cameras, ----Flashes, ----Lenses, ----Tripods & Monopods, --Cell Phones & Accessories, ----Accessories, ------Cables & Adapters, ------Cases, ------Headphones, ------MicroSD Cards, ------Stands, ----Carrier Cell Phones, ----Unlocked Cell Phones]
+2022-03-14 14:25:43.479  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | reverseSortDir : desc
+2022-03-14 14:25:43.479  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | totalPages : 1
+2022-03-14 14:25:43.479  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | totalItems : 2
+2022-03-14 14:25:43.479  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | currentPage : 1
+2022-03-14 14:25:43.479  INFO 12672 --- [http-nio-8080-exec-3] c.m.admin.controller.CategoryController  : CategoryController | listByPage | sortDir : asc
+2022-03-14 14:25:51.719  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.controller.ProductController   : ProductController | listFirstPage is started
+2022-03-14 14:25:51.730  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.controller.ProductController   : ProductController | listByPage is started
+2022-03-14 14:25:51.735  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable is started
+2022-03-14 14:25:51.735  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | sort : name: ASC
+2022-03-14 14:25:51.735  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageNum - 1 : 0
+2022-03-14 14:25:51.735  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageSize : 5
+2022-03-14 14:25:51.773  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes is started
+2022-03-14 14:25:51.773  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | startCount : 1
+2022-03-14 14:25:51.773  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 5
+2022-03-14 14:25:51.773  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | page.getTotalElements() : 0
+2022-03-14 14:25:51.773  INFO 12672 --- [http-nio-8080-exec-5] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 0
+2022-03-14 14:25:51.777 ERROR 12672 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/MollaAdmin] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.fullname' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'principal.fullname' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.extras.springsecurity5.dialect.processor.AuthenticationAttrProcessor.doProcess(AuthenticationAttrProcessor.java:66) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+java.lang.NullPointerException: null
+	at com.molla.admin.paging.PagingAndSortingHelper.updateModelAttributes(PagingAndSortingHelper.java:52) ~[classes/:na]
+	at com.molla.admin.service.ProductService.listByPage(ProductService.java:123) ~[classes/:na]
+	at com.molla.admin.service.ProductService$$FastClassBySpringCGLIB$$70dfb5da.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.16.jar:5.3.16]
+	at com.molla.admin.service.ProductService$$EnhancerBySpringCGLIB$$640702f9.listByPage(<generated>) ~[classes/:na]
+	at com.molla.admin.controller.ProductController.listByPage(ProductController.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
@@ -507,21 +343,20 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -539,14 +374,18 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -558,20 +397,18 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
@@ -585,31 +422,68 @@ org.springframework.beans.NotReadablePropertyException: Invalid property 'princi
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
 
-2022-03-14 13:41:56.694 ERROR 13460 --- [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+2022-03-14 14:25:54.031  INFO 12672 --- [http-nio-8080-exec-10] c.m.admin.controller.ProductController   : ProductController | listFirstPage is started
+2022-03-14 14:25:54.041  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.controller.ProductController   : ProductController | listByPage is started
+2022-03-14 14:25:54.042  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable is started
+2022-03-14 14:25:54.043  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | sort : name: ASC
+2022-03-14 14:25:54.043  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageNum - 1 : 0
+2022-03-14 14:25:54.043  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | createPageable | pageSize : 5
+2022-03-14 14:25:54.045  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes is started
+2022-03-14 14:25:54.045  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | startCount : 1
+2022-03-14 14:25:54.045  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 5
+2022-03-14 14:25:54.045  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | page.getTotalElements() : 0
+2022-03-14 14:25:54.045  INFO 12672 --- [http-nio-8080-exec-7] c.m.admin.paging.PagingAndSortingHelper  : PagingAndSortingArgumentResolver | updateModelAttributes | endCount : 0
+2022-03-14 14:25:54.047 ERROR 12672 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/MollaAdmin] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.16.jar:5.3.16]
+java.lang.NullPointerException: null
+	at com.molla.admin.paging.PagingAndSortingHelper.updateModelAttributes(PagingAndSortingHelper.java:52) ~[classes/:na]
+	at com.molla.admin.service.ProductService.listByPage(ProductService.java:123) ~[classes/:na]
+	at com.molla.admin.service.ProductService$$FastClassBySpringCGLIB$$70dfb5da.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.16.jar:5.3.16]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.16.jar:5.3.16]
+	at com.molla.admin.service.ProductService$$EnhancerBySpringCGLIB$$640702f9.listByPage(<generated>) ~[classes/:na]
+	at com.molla.admin.controller.ProductController.listByPage(ProductController.java:83) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -627,14 +501,18 @@ org.springframework.web.util.NestedServletException: Request processing failed; 
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
 	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
@@ -646,20 +524,18 @@ org.springframework.web.util.NestedServletException: Request processing failed; 
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
@@ -672,49 +548,35 @@ org.springframework.web.util.NestedServletException: Request processing failed; 
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
 	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/500.html]")
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
-	... 83 common frames omitted
-Caused by: org.attoparser.ParseException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	... 94 common frames omitted
-Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Error retrieving value for property "principal.fullname" of authentication object of class org.springframework.security.authentication.UsernamePasswordAuthenticationToken (template: "navigation" - line 117, col 7)
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:151) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.extras.springsecurity5.dialect.processor.AuthenticationAttrProcessor.doProcess(AuthenticationAttrProcessor.java:66) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1587) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
-	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
-	... 96 common frames omitted
-Caused by: org.springframework.beans.NotReadablePropertyException: Invalid property 'principal.fullname' of bean class [org.springframework.security.authentication.UsernamePasswordAuthenticationToken]: Bean property 'principal.fullname' is not readable or has an invalid getter method: Does the return type of the getter match the parameter type of the setter?
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:627) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyValue(AbstractNestablePropertyAccessor.java:617) ~[spring-beans-5.3.16.jar:5.3.16]
-	at org.thymeleaf.extras.springsecurity5.auth.AuthUtils.getAuthenticationProperty(AuthUtils.java:137) ~[thymeleaf-extras-springsecurity5-3.0.4.RELEASE.jar:3.0.4.RELEASE]
-	... 114 common frames omitted
 
+2022-03-14 14:27:24.596  INFO 6664 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Starting MollaBackEndApplication using Java 11.0.11 on DESKTOP-VU2MQQ8 with PID 6664 (E:\Materials\Java\Spring\Projects\MollaECommerceProject\MollaWebParent\MollaBackEnd\target\classes started by Mohamed in E:\Materials\Java\Spring\Projects\MollaECommerceProject)
+2022-03-14 14:27:24.599  INFO 6664 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-14 14:27:24.736  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/xalan/xalan/2.7.2/xercesImpl.jar,file:/C:/Users/Mohamed/.m2/repository/xalan/xalan/2.7.2/xml-apis.jar,file:/C:/Users/Mohamed/.m2/repository/xalan/xalan/2.7.2/serializer.jar
+2022-03-14 14:27:24.736  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/xalan/serializer/2.7.2/xml-apis.jar
+2022-03-14 14:27:24.737  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-svgrasterizer-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-transcoder-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-i18n-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-codec-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-extension-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/batik-svg-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer-ext/1.13/xml-apis-ext-1.3.04.jar
+2022-03-14 14:27:24.737  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-svgrasterizer-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/xml-apis-ext-1.3.04.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-transcoder-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-svg-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-i18n-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/batik-codec-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-rasterizer/1.13/lib/fop-transcoder-allinone-2.5.jar
+2022-03-14 14:27:24.739  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-svg-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-i18n-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-slideshow/1.13/lib/xml-apis-ext-1.3.04.jar
+2022-03-14 14:27:24.740  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-svgbrowser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-swing-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-gui-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-transcoder-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-i18n-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/xml-apis-ext-1.3.04.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-extension-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle-ext/1.13/batik-svg-dom-1.13.jar
+2022-03-14 14:27:24.740  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-svgbrowser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-svg-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-swing-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-gui-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-transcoder-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-i18n-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-squiggle/1.13/lib/xml-apis-ext-1.3.04.jar
+2022-03-14 14:27:24.740  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-transcoder-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-anim-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-css-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-ext-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-parser-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-svg-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-bridge-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-script-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-dom-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/xalan-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/serializer-2.7.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/xml-apis-1.4.01.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-gvt-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-xml-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/xml-apis-ext-1.3.04.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-svgpp/1.13/lib/batik-i18n-1.13.jar
+2022-03-14 14:27:24.740  INFO 6664 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Mohamed\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar referenced one or more files that do not exist: file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-shared-resources-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-svggen-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-awt-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/xmlgraphics-commons-2.4.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/commons-io-1.3.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/commons-logging-1.2.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-util-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-constants-1.13.jar,file:/C:/Users/Mohamed/.m2/repository/org/apache/xmlgraphics/batik-ttf2svg/1.13/lib/batik-i18n-1.13.jar
+2022-03-14 14:27:24.741  INFO 6664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-14 14:27:24.742  INFO 6664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-14 14:27:26.677  INFO 6664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-14 14:27:26.806  INFO 6664 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 10 JPA repository interfaces.
+2022-03-14 14:27:27.810  INFO 6664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-14 14:27:27.834  INFO 6664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 14:27:27.834  INFO 6664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-14 14:27:28.069  INFO 6664 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
+2022-03-14 14:27:28.069  INFO 6664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3326 ms
+2022-03-14 14:27:28.307  INFO 6664 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-14 14:27:28.365  INFO 6664 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-14 14:27:28.529  INFO 6664 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-14 14:27:28.651  INFO 6664 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-14 14:27:28.829  INFO 6664 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-14 14:27:28.845  INFO 6664 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-14 14:27:30.161  INFO 6664 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-14 14:27:30.184  INFO 6664 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-14 14:27:30.255  WARN 6664 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-14 14:27:32.074  WARN 6664 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-14 14:27:32.110  INFO 6664 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
