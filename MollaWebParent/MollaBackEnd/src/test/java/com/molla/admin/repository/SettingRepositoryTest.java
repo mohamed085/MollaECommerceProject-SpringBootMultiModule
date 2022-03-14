@@ -24,9 +24,9 @@ class SettingRepositoryTest {
 
     @Test
     public void testCreateGeneralSettings() {
-        Setting siteName = new Setting("SITE_NAME", "Shopme", SettingCategory.GENERAL);
+        Setting siteName = new Setting("SITE_NAME", "Molla", SettingCategory.GENERAL);
         Setting siteLogo = new Setting("SITE_LOGO", "Shopme.png", SettingCategory.GENERAL);
-        Setting copyright = new Setting("COPYRIGHT", "Copyright (C) 2021 Shopme Ltd.", SettingCategory.GENERAL);
+        Setting copyright = new Setting("COPYRIGHT", "Copyright (C) 2021 Molla Ltd.", SettingCategory.GENERAL);
 
         repo.saveAll(List.of(siteName, siteLogo, copyright));
 

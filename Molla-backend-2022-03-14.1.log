@@ -1,7 +1,7 @@
 2022-03-14 13:52:32.041  INFO 2088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2022-03-14 13:52:32.199  INFO 2088 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 10 JPA repository interfaces.
 2022-03-14 13:52:33.701  INFO 2088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-14 13:52:33.711  INFO 2088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 13:52:33.711  INFO 2088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting com.molla.site.service [Tomcat]
 2022-03-14 13:52:33.711  INFO 2088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
 2022-03-14 13:52:33.846  INFO 2088 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
 2022-03-14 13:52:33.847  INFO 2088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3177 ms
@@ -107,7 +107,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or upda
 2022-03-14 13:54:09.056  INFO 12608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2022-03-14 13:54:09.170  INFO 12608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 10 JPA repository interfaces.
 2022-03-14 13:54:10.027  INFO 12608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-14 13:54:10.036  INFO 12608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 13:54:10.036  INFO 12608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting com.molla.site.service [Tomcat]
 2022-03-14 13:54:10.036  INFO 12608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
 2022-03-14 13:54:10.175  INFO 12608 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
 2022-03-14 13:54:10.176  INFO 12608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2149 ms
@@ -209,7 +209,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or upda
 2022-03-14 13:54:34.771  INFO 6952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2022-03-14 13:54:34.898  INFO 6952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 10 JPA repository interfaces.
 2022-03-14 13:54:35.817  INFO 6952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-14 13:54:35.827  INFO 6952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-14 13:54:35.827  INFO 6952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting com.molla.site.service [Tomcat]
 2022-03-14 13:54:35.827  INFO 6952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
 2022-03-14 13:54:35.978  INFO 6952 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
 2022-03-14 13:54:35.979  INFO 6952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2179 ms
