@@ -25,7 +25,7 @@ public class ProductSaveHelper {
 		
 		LOGGER.info("ProductSaveHelper | deleteExtraImagesWeredRemovedOnForm is started");
 		
-		String extraImageDir = "../product-images/" + product.getId() + "/extras";
+		String extraImageDir = "product-images/" + product.getId() + "/extras";
 		Path dirPath = Paths.get(extraImageDir);
 		
 		LOGGER.info("ProductSaveHelper | deleteExtraImagesWeredRemovedOnForm | dirPath  : " + dirPath);
@@ -55,10 +55,7 @@ public class ProductSaveHelper {
 			Product product) {
 		
 		LOGGER.info("ProductSaveHelper | setExistingExtraImageNames is started");
-		
-		LOGGER.info("ProductSaveHelper | deleteExtraImagesWeredRemovedOnForm | imageIDs  : " + imageIDs.toString());
-		LOGGER.info("ProductSaveHelper | deleteExtraImagesWeredRemovedOnForm | imageNames  : " + imageNames.toString());
-		
+
 		if (imageIDs == null || imageIDs.length == 0) return;
 
 		Set<ProductImage> images = new HashSet<>();
@@ -138,7 +135,7 @@ public class ProductSaveHelper {
 			
 			LOGGER.info("ProductSaveHelper | setMainImageName | fileName : " + fileName);
 			
-			String uploadDir = "../product-images/" + savedProduct.getId();
+			String uploadDir = "product-images/" + savedProduct.getId();
 			
 			LOGGER.info("ProductSaveHelper | setMainImageName | uploadDir : " + uploadDir);
 
@@ -151,7 +148,7 @@ public class ProductSaveHelper {
 		
 		if (extraImageMultiparts.length > 0) {
 			
-			String uploadDir = "../product-images/" + savedProduct.getId() + "/extras";
+			String uploadDir = "product-images/" + savedProduct.getId() + "/extras";
 			
 			LOGGER.info("ProductSaveHelper | setMainImageName | uploadDir : " + uploadDir);
 

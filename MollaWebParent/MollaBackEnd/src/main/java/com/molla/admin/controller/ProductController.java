@@ -106,7 +106,6 @@ public class ProductController {
 		
 		LOGGER.info("ProductController | newProduct | product : " + product);
 		LOGGER.info("ProductController | newProduct | listBrands : " + listBrands.size());
-		
 
 		model.addAttribute("product", product);
 		model.addAttribute("listBrands", listBrands);
