@@ -13,42 +13,41 @@ import java.util.Set;
 
 public class MollaUserDetails implements UserDetails {
 
+
+    private static final long serialVersionUID = 1L;
+
     private User user;
 
     public MollaUserDetails(User user) {
+        super();
         this.user = user;
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+        // TODO Auto-generated method stub
         Set<Role> roles = user.getRoles();
-        List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+
+        List<SimpleGrantedAuthority> authories = new ArrayList<>();
 
         for (Role role : roles) {
-            authorities.add(new SimpleGrantedAuthority(role.getName()));
+            authories.add(new SimpleGrantedAuthority(role.getName()));
         }
 
-        return authorities;
+        return authories;
     }
 
     @Override
     public String getPassword() {
+        // TODO Auto-generated method stub
         return user.getPassword();
     }
+
 
     @Override
     public String getUsername() {
         return user.getEmail();
     }
-
-    public String getName() {
-        return user.getFullName();
-    }
-
-    public Integer getId() {
-        return user.getId();
-    }
-
 
     @Override
     public boolean isAccountNonExpired() {
@@ -69,4 +68,21 @@ public class MollaUserDetails implements UserDetails {
     public boolean isEnabled() {
         return user.isEnabled();
     }
+
+    public String getFullname() {
+        return this.user.getFirstName() + " " + this.user.getLastName();
+    }
+
+    public void setFirstName(String firstName) {
+        this.user.setFirstName(firstName);
+    }
+
+    public void setLastName(String lastName) {
+        this.user.setLastName(lastName);
+    }
+
+    public boolean hasRole(String roleName) {
+        return user.hasRole(roleName);
+    }
+
 }
