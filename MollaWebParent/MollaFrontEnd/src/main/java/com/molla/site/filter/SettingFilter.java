@@ -32,16 +32,16 @@ public class SettingFilter implements Filter {
             throws IOException, ServletException {
         // TODO Auto-generated method stub
 
-        LOGGER.info("SettingFilter | doFilter is called");
+//        LOGGER.info("SettingFilter | doFilter is called");
 
         HttpServletRequest servletRequest = (HttpServletRequest) request;
         String url = servletRequest.getRequestURL().toString();
 
-        LOGGER.info("SettingFilter | doFilter | url : " + url);
+//        LOGGER.info("SettingFilter | doFilter | url : " + url);
 
         if (url.endsWith(".css") || url.endsWith(".js") || url.endsWith(".png") ||
                 url.endsWith(".jpg")) {
-            LOGGER.info("SettingFilter | doFilter | .css , .js , .png , . jpg | url : " + url);
+//            LOGGER.info("SettingFilter | doFilter | .css , .js , .png , . jpg | url : " + url);
             chain.doFilter(request, response);
             return;
         }
@@ -49,7 +49,7 @@ public class SettingFilter implements Filter {
         List<Setting> generalSettings = service.getGeneralSettings();
 
         generalSettings.forEach(setting -> {
-            LOGGER.info("SettingFilter | doFilter | generalSettings : " + generalSettings);
+//            LOGGER.info("SettingFilter | doFilter | generalSettings : " + generalSettings);
             request.setAttribute(setting.getKey(), setting.getValue());
         });
 
