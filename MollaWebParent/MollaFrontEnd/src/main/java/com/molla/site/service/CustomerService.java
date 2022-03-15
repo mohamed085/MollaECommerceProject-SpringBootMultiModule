@@ -36,7 +36,6 @@ public class CustomerService implements ICustomerService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
-
     @Override
     public List<Country> listAllCountries() {
         return countryRepo.findAllByOrderByNameAsc();
@@ -58,6 +57,7 @@ public class CustomerService implements ICustomerService {
         customer.setVerificationCode(randomCode);
 
         customerRepo.save(customer);
+
     }
 
     @Override
@@ -77,33 +77,62 @@ public class CustomerService implements ICustomerService {
         return customerRepo.findByEmail(email);
     }
 
-    @Override
-    public void updateAuthenticationType(Customer customer, AuthenticationType type) {
-
-    }
-
-    @Override
-    public void addNewCustomerUponOAuthLogin(String name, String email, String countryCode, AuthenticationType authenticationType) {
-
-    }
-
-    @Override
     public void update(Customer customerInForm) {
+        Customer customerInDB = customerRepo.findById(customerInForm.getId()).get();
 
+        if (customerInDB.getAuthenticationType().equals(AuthenticationType.DATABASE)) {
+            if (!customerInForm.getPassword().isEmpty()) {
+                String encodedPassword = passwordEncoder.encode(customerInForm.getPassword());
+                customerInForm.setPassword(encodedPassword);
+            } else {
+                customerInForm.setPassword(customerInDB.getPassword());
+            }
+        } else {
+            customerInForm.setPassword(customerInDB.getPassword());
+        }
+
+        customerInForm.setEnabled(customerInDB.isEnabled());
+        customerInForm.setCreatedTime(customerInDB.getCreatedTime());
+        customerInForm.setVerificationCode(customerInDB.getVerificationCode());
+        customerInForm.setAuthenticationType(customerInDB.getAuthenticationType());
+        customerInForm.setResetPasswordToken(customerInDB.getResetPasswordToken());
+
+        customerRepo.save(customerInForm);
     }
 
     @Override
     public String updateResetPasswordToken(String email) throws CustomerNotFoundException {
-        return null;
+        // TODO Auto-generated method stub
+        Customer customer = customerRepo.findByEmail(email);
+        if (customer != null) {
+            String token = RandomString.make(30);
+            customer.setResetPasswordToken(token);
+            customerRepo.save(customer);
+
+            return token;
+        } else {
+            throw new CustomerNotFoundException("Could not find any customer with the email " + email);
+        }
     }
 
     @Override
     public Customer getByResetPasswordToken(String token) {
-        return null;
+        // TODO Auto-generated method stub
+        return customerRepo.findByResetPasswordToken(token);
     }
 
     @Override
     public void updatePassword(String token, String newPassword) throws CustomerNotFoundException {
+        // TODO Auto-generated method stub
+        Customer customer = customerRepo.findByResetPasswordToken(token);
+        if (customer == null) {
+            throw new CustomerNotFoundException("No customer found: invalid token");
+        }
 
+        customer.setPassword(newPassword);
+        customer.setResetPasswordToken(null);
+        CustomerRegisterUtil.encodePassword(customer, passwordEncoder);
+
+        customerRepo.save(customer);
     }
 }

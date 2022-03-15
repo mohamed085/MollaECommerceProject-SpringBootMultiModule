@@ -3,7 +3,8 @@ package com.molla.site.config;
 
 import com.molla.site.service.CustomerOAuth2UserService;
 import com.molla.site.service.CustomerUserDetailsService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.molla.site.service.DatabaseLoginSuccessHandler;
+import com.molla.site.service.OAuth2LoginSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -21,8 +22,16 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    private CustomerOAuth2UserService oAuth2UserService;
+    private final CustomerOAuth2UserService oAuth2UserService;
+    private final OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler;
+    private final DatabaseLoginSuccessHandler databaseLoginSuccessHandler;
+
+    public WebSecurityConfig(CustomerOAuth2UserService oAuth2UserService, OAuth2LoginSuccessHandler oAuth2LoginSuccessHandler, DatabaseLoginSuccessHandler databaseLoginSuccessHandler) {
+        this.oAuth2UserService = oAuth2UserService;
+        this.oAuth2LoginSuccessHandler = oAuth2LoginSuccessHandler;
+        this.databaseLoginSuccessHandler = databaseLoginSuccessHandler;
+    }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -33,13 +42,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .formLogin()
                     .loginPage("/login")
                     .usernameParameter("email")
+                    .successHandler(databaseLoginSuccessHandler)
                     .permitAll()
                 .and()
                     .oauth2Login()
                     .loginPage("/login")
                     .userInfoEndpoint()
                     .userService(oAuth2UserService)
-                .and()
+                    .and()
+                    .successHandler(oAuth2LoginSuccessHandler)
                 .and()
                     .logout().permitAll()
                 .and()

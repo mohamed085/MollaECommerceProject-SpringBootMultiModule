@@ -14,9 +14,6 @@ public interface ICustomerService {
     void registerCustomer(Customer customer);
     boolean verify(String verificationCode);
     Customer getCustomerByEmail(String email);
-    void updateAuthenticationType(Customer customer, AuthenticationType type);
-    void addNewCustomerUponOAuthLogin(String name, String email, String countryCode,
-                                             AuthenticationType authenticationType);
     void update(Customer customerInForm);
     String updateResetPasswordToken(String email) throws CustomerNotFoundException;
     Customer getByResetPasswordToken(String token);
