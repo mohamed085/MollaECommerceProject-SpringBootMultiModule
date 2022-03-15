@@ -1829,3 +1829,1093 @@ Using generated security password: 55cd6201-fd7d-4361-a7a9-0875a39209de
 2022-03-14 20:43:04.128  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
 2022-03-14 20:43:04.128  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
 2022-03-14 20:43:04.132  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:47.751  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.753  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/account_details
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.758  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.759  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:47.762  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:47.796 ERROR 11144 --- [http-nio-80-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-3] Exception processing template "error/404": An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 93 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 95 common frames omitted
+
+2022-03-14 20:44:47.798  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:47.801 ERROR 11144 --- [http-nio-80-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-03-14 20:44:47.804 ERROR 11144 --- [http-nio-80-exec-3] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	... 82 common frames omitted
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 93 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 95 common frames omitted
+
+2022-03-14 20:44:47.839  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.839  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:44:47.839  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:44:47.846  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.846  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:44:47.846  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:44:47.855  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:47.862  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.862  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:44:47.862  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:44:47.863  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.863  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:44:47.863  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:44:47.867  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.868  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:44:47.868  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:44:47.896  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:47.896  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 20:44:47.896  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 20:44:47.899  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.299  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.300  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/
+2022-03-14 20:44:49.305  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.305  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.305  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.305  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.305  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.306  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.306  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.306  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.306  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.308  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.controller.MainController   : MainController | viewHomePage is called
+2022-03-14 20:44:49.349  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.controller.MainController   : MainController | viewHomePage | listCategories : 25
+2022-03-14 20:44:49.364  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | getFullName: mohamed emad
+2022-03-14 20:44:49.365  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | getFullName: mohamed emad
+2022-03-14 20:44:49.413  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.445  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.445  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:44:49.445  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:44:49.448  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.448  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:44:49.448  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:44:49.452  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.455  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.456  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:44:49.456  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:44:49.461  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.461  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:44:49.461  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:44:49.462  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.463  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:44:49.463  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:44:49.492  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.492  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/17/cables%20and%20adapters.png
+2022-03-14 20:44:49.492  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/17/cables%20and%20adapters.png
+2022-03-14 20:44:49.493  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.494  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.494  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/14/carrier%20cellphones.png
+2022-03-14 20:44:49.494  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/14/carrier%20cellphones.png
+2022-03-14 20:44:49.494  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.497  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.498  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.524  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.522  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.510  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.526  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/5/desktop%20computers.png
+2022-03-14 20:44:49.527  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/5/desktop%20computers.png
+2022-03-14 20:44:49.527  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.527  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/10/digital%20cameras.png
+2022-03-14 20:44:49.527  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/10/digital%20cameras.png
+2022-03-14 20:44:49.528  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.530  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.530  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/23/graphic%20cards.png
+2022-03-14 20:44:49.530  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/23/graphic%20cards.png
+2022-03-14 20:44:49.532  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.526  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/22/computer%20processors.png
+2022-03-14 20:44:49.532  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/22/computer%20processors.png
+2022-03-14 20:44:49.533  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.533  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.533  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/24/internal%20hard%20drive.png
+2022-03-14 20:44:49.533  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/24/internal%20hard%20drive.png
+2022-03-14 20:44:49.534  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.535  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.536  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.539  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.526  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/20/cellphone%20cases.png
+2022-03-14 20:44:49.540  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/20/cellphone%20cases.png
+2022-03-14 20:44:49.539  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.532  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.542  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.545  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.548  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.575  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.575  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/25/internal%20optical%20drives.png
+2022-03-14 20:44:49.575  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/25/internal%20optical%20drives.png
+2022-03-14 20:44:49.575  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.576  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/6/laptop%20computers.png
+2022-03-14 20:44:49.576  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/6/laptop%20computers.png
+2022-03-14 20:44:49.576  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.576  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/29/computer%20memory.png
+2022-03-14 20:44:49.576  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/29/computer%20memory.png
+2022-03-14 20:44:49.577  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.577  INFO 11144 --- [http-nio-80-exec-7] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.577  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.579  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.579  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/18/microsd%20cards.png
+2022-03-14 20:44:49.579  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/18/microsd%20cards.png
+2022-03-14 20:44:49.580  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.580  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.583  INFO 11144 --- [http-nio-80-exec-7] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.583  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.585  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.588  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.588  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/31/network%20cards.png
+2022-03-14 20:44:49.588  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/31/network%20cards.png
+2022-03-14 20:44:49.590  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.593  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.606  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.607  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/26/power%20supplies.png
+2022-03-14 20:44:49.607  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/26/power%20supplies.png
+2022-03-14 20:44:49.607  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.615  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.622  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.622  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/27/solid%20state%20drives.png
+2022-03-14 20:44:49.622  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/27/solid%20state%20drives.png
+2022-03-14 20:44:49.624  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.624  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/28/sound%20cards.png
+2022-03-14 20:44:49.624  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/28/sound%20cards.png
+2022-03-14 20:44:49.625  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.625  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.627  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.628  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.629  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.629  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/15/unlocked%20cellphones.png
+2022-03-14 20:44:49.629  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/15/unlocked%20cellphones.png
+2022-03-14 20:44:49.634  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.637  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:44:49.667  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:44:49.667  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webfonts/fa-solid-900.woff2
+2022-03-14 20:44:49.673  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.673  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.673  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.673  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.674  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.674  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.674  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.674  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.674  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:44:49.677  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:16.753  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.754  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.760  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.761  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:16.762  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.controller.MainController   : MainController | viewHomePage is called
+2022-03-14 20:55:16.809  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.controller.MainController   : MainController | viewHomePage | listCategories : 25
+2022-03-14 20:55:16.834  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | getFullName: mohamed emad
+2022-03-14 20:55:16.836  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | getFullName: mohamed emad
+2022-03-14 20:55:16.902  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:16.927  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.928  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.928  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:55:16.929  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:55:16.929  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 20:55:16.929  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 20:55:16.929  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.929  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:55:16.930  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/css/styles.css
+2022-03-14 20:55:16.930  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.930  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:55:16.930  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 20:55:16.933  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:16.943  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.943  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:55:16.943  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 20:55:16.998  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:16.998  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 20:55:16.998  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 20:55:17.000  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/9/bags_cases.png
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/9/bags_cases.png
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/17/cables%20and%20adapters.png
+2022-03-14 20:55:17.016  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/17/cables%20and%20adapters.png
+2022-03-14 20:55:17.018  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.026  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.027  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.042  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.042  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/14/carrier%20cellphones.png
+2022-03-14 20:55:17.042  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/14/carrier%20cellphones.png
+2022-03-14 20:55:17.043  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.046  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.052  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.052  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/20/cellphone%20cases.png
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/20/cellphone%20cases.png
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/5/desktop%20computers.png
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/5/desktop%20computers.png
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.053  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.056  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.057  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.059  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.059  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/11/flashes.png
+2022-03-14 20:55:17.059  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/11/flashes.png
+2022-03-14 20:55:17.061  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.061  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/10/digital%20cameras.png
+2022-03-14 20:55:17.061  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/10/digital%20cameras.png
+2022-03-14 20:55:17.062  INFO 11144 --- [http-nio-80-exec-7] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.062  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.052  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.065  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/22/computer%20processors.png
+2022-03-14 20:55:17.065  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/22/computer%20processors.png
+2022-03-14 20:55:17.065  INFO 11144 --- [http-nio-80-exec-7] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.066  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.080  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.080  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.069  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.081  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/21/headphones.png
+2022-03-14 20:55:17.081  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/21/headphones.png
+2022-03-14 20:55:17.080  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/23/graphic%20cards.png
+2022-03-14 20:55:17.082  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/23/graphic%20cards.png
+2022-03-14 20:55:17.083  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.083  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.085  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/24/internal%20hard%20drive.png
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-4] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/24/internal%20hard%20drive.png
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/6/laptop%20computers.png
+2022-03-14 20:55:17.093  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/6/laptop%20computers.png
+2022-03-14 20:55:17.094  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.094  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/25/internal%20optical%20drives.png
+2022-03-14 20:55:17.094  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/25/internal%20optical%20drives.png
+2022-03-14 20:55:17.094  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.095  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.096  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.094  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.096  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.098  INFO 11144 --- [http-nio-80-exec-4] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.098  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.098  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/12/lenses.png
+2022-03-14 20:55:17.098  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/12/lenses.png
+2022-03-14 20:55:17.101  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.103  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.103  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/29/computer%20memory.png
+2022-03-14 20:55:17.103  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/29/computer%20memory.png
+2022-03-14 20:55:17.104  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.108  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.114  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.114  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/18/microsd%20cards.png
+2022-03-14 20:55:17.114  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/18/microsd%20cards.png
+2022-03-14 20:55:17.115  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.117  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.124  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.124  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/30/motherboards.png
+2022-03-14 20:55:17.125  INFO 11144 --- [http-nio-80-exec-7] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/30/motherboards.png
+2022-03-14 20:55:17.126  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.127  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/31/network%20cards.png
+2022-03-14 20:55:17.127  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/31/network%20cards.png
+2022-03-14 20:55:17.127  INFO 11144 --- [http-nio-80-exec-7] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.127  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.129  INFO 11144 --- [http-nio-80-exec-2] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.141  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.141  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/26/power%20supplies.png
+2022-03-14 20:55:17.141  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/26/power%20supplies.png
+2022-03-14 20:55:17.142  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/27/solid%20state%20drives.png
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/27/solid%20state%20drives.png
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/28/sound%20cards.png
+2022-03-14 20:55:17.143  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/28/sound%20cards.png
+2022-03-14 20:55:17.144  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.144  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.144  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/19/cellphone_stands.png
+2022-03-14 20:55:17.144  INFO 11144 --- [http-nio-80-exec-1] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/19/cellphone_stands.png
+2022-03-14 20:55:17.144  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.145  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.145  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.150  INFO 11144 --- [http-nio-80-exec-1] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.148  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.151  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/7/tablets.png
+2022-03-14 20:55:17.151  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/7/tablets.png
+2022-03-14 20:55:17.145  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.155  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.156  INFO 11144 --- [http-nio-80-exec-9] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.156  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/13/tripods_monopods.png
+2022-03-14 20:55:17.156  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/13/tripods_monopods.png
+2022-03-14 20:55:17.158  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.159  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.159  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/category-images/15/unlocked%20cellphones.png
+2022-03-14 20:55:17.159  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/category-images/15/unlocked%20cellphones.png
+2022-03-14 20:55:17.161  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.163  INFO 11144 --- [http-nio-80-exec-6] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 20:55:17.228  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 20:55:17.228  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webfonts/fa-solid-900.woff2
+2022-03-14 20:55:17.231  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.231  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.232  INFO 11144 --- [http-nio-80-exec-8] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 20:55:17.235  INFO 11144 --- [http-nio-80-exec-8] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 22:28:26.079  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | customer: Customer [id=1, email=mohamed085555@gmail.com, firstName=mohamed, lastName=emad]
+2022-03-14 22:28:26.106  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 22:28:26.107  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | password: $2a$10$KISs0V7cxCnue2aX4QJlk.igjnTamCyfhOXzUUqY3S6auMSIiHa2e
+2022-03-14 22:28:26.127  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | isEnabled: true
+2022-03-14 22:28:26.227  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.227  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/account_details
+2022-03-14 22:28:26.234  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.235  INFO 11144 --- [http-nio-80-exec-5] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | generalSettings : [Setting [key=COPYRIGHT, value=Copyright (C) 2021 Molla Ltd.], Setting [key=CURRENCY_ID, value=1], Setting [key=CURRENCY_SYMBOL, value=$], Setting [key=CURRENCY_SYMBOL_POSITION, value=Before price], Setting [key=DECIMAL_DIGITS, value=2], Setting [key=DECIMAL_POINT_TYPE, value=POINT], Setting [key=SITE_LOGO, value=/site-logo/Molla.png], Setting [key=SITE_NAME, value=Molla], Setting [key=THOUSANDS_POINT_TYPE, value=COMMA]]
+2022-03-14 22:28:26.247  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 22:28:26.501 ERROR 11144 --- [http-nio-80-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-5] Exception processing template "error/404": An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 93 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 95 common frames omitted
+
+2022-03-14 22:28:26.503  INFO 11144 --- [http-nio-80-exec-5] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 22:28:26.525 ERROR 11144 --- [http-nio-80-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-03-14 22:28:26.527 ERROR 11144 --- [http-nio-80-exec-5] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.58.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:80) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.web.servlet.filter.ErrorPageSecurityFilter.doFilter(ErrorPageSecurityFilter.java:70) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:106) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:87) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:102) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:93) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.2.jar:5.6.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.16.jar:5.3.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:313) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:403) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.58.jar:9.0.58]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error/404.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.16.jar:5.3.16]
+	... 82 common frames omitted
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 93 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{fragments :: footer_menu}": template or fragment could not be resolved (template: "error/404" - line 14, col 7)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 95 common frames omitted
+
+2022-03-14 22:28:26.572  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.572  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 22:28:26.573  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/css/bootstrap.min.css
+2022-03-14 22:28:26.573  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.573  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 22:28:26.573  INFO 11144 --- [http-nio-80-exec-10] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/fontawesome/all.css
+2022-03-14 22:28:26.575  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.575  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/css/styles.css
+2022-03-14 22:28:26.575  INFO 11144 --- [http-nio-80-exec-6] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/css/styles.css
+2022-03-14 22:28:26.584  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.585  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 22:28:26.585  INFO 11144 --- [http-nio-80-exec-9] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/jquery/3.4.1/jquery.min.js
+2022-03-14 22:28:26.590  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.591  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 22:28:26.591  INFO 11144 --- [http-nio-80-exec-2] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/webjars/bootstrap/4.3.1/js/bootstrap.min.js
+2022-03-14 22:28:26.594  INFO 11144 --- [http-nio-80-exec-10] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com
+2022-03-14 22:28:26.633  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter is called
+2022-03-14 22:28:26.634  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 22:28:26.634  INFO 11144 --- [http-nio-80-exec-3] com.molla.site.filter.SettingFilter      : SettingFilter | doFilter | .css , .js , .png , . jpg | url : http://localhost/Molla/site-logo/Molla.png
+2022-03-14 22:28:26.636  INFO 11144 --- [http-nio-80-exec-3] c.molla.site.model.CustomerUserDetails   : CustomerUserDetails | username: mohamed085555@gmail.com

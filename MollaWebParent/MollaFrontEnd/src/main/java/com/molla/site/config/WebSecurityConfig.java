@@ -1,6 +1,7 @@
 package com.molla.site.config;
 
 
+import com.molla.site.service.CustomerOAuth2UserService;
 import com.molla.site.service.CustomerUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,6 +21,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
+    @Autowired
+    private CustomerOAuth2UserService oAuth2UserService;
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
@@ -30,6 +34,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                     .loginPage("/login")
                     .usernameParameter("email")
                     .permitAll()
+                .and()
+                    .oauth2Login()
+                    .loginPage("/login")
+                    .userInfoEndpoint()
+                    .userService(oAuth2UserService)
+                .and()
                 .and()
                     .logout().permitAll()
                 .and()

@@ -1,0 +1,38 @@
+logging:
+  logback:
+    rollingpolicy:
+      file-name-pattern: Shopme-frontend-%d{yyyy-MM-dd}.%i.log
+      max-file-size: 100KB
+      max-history: 14
+      total-size-cap: 1MB
+server:
+  port: 80
+  servlet:
+    context-path: /Molla
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  datasource:
+    password: root
+    url: jdbc:mysql://localhost:3306/shopme
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 9464183300-e9vgpir46ndi8jen26k1d36sda0gpelj.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
