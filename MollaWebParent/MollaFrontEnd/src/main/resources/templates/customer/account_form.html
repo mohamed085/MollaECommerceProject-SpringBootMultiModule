@@ -15,6 +15,7 @@
 	<form th:action="@{/update_account_details}" method="post" th:object="${customer}"
 		style="max-width: 600px; margin: 0 auto">
 		<input type="hidden" name="redirect" th:value="${param.redirect}" />
+		<input type="hidden" th:field="*{id}" />
 	<div th:if="${message != null}" class="alert alert-success text-center">
 		[[${message}]]
 	</div>		

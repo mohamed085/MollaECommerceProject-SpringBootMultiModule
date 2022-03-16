@@ -6,6 +6,7 @@ import java.util.List;
 import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 
+import com.molla.site.util.CustomerAccountUtil;
 import com.molla.site.util.CustomerRegisterUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -78,6 +79,57 @@ public class CustomerController {
 
         return "register/" + (verified ? "verify_success" : "verify_fail");
     }
+    
 
+    @GetMapping("/account_details")
+    public String viewAccountDetails(Model model,
+                                     HttpServletRequest request) {
+        LOGGER.info("CustomerController | viewAccountDetails is called");
+
+        String email = CustomerAccountUtil.getEmailOfAuthenticatedCustomer(request);
+
+        LOGGER.info("CustomerController | viewAccountDetails | email : " + email);
+
+        Customer customer = customerService.getCustomerByEmail(email);
+
+        LOGGER.info("CustomerController | viewAccountDetails | customer : " + customer.toString());
+
+        List<Country> listCountries = customerService.listAllCountries();
+
+        LOGGER.info("CustomerController | viewAccountDetails | listCountries : " + listCountries.size());
+
+        model.addAttribute("customer", customer);
+        model.addAttribute("listCountries", listCountries);
+
+        return "customer/account_form";
+    }
+
+    @PostMapping("/update_account_details")
+    public String updateAccountDetails(Model model, Customer customer, RedirectAttributes ra,
+                                       HttpServletRequest request) {
+
+        LOGGER.info("CustomerController | updateAccountDetails is called");
+        LOGGER.info("CustomerController | updateAccountDetails | customer: " + customer.toString());
+
+        customerService.update(customer);
+
+        ra.addFlashAttribute("message", "Your account details have been updated.");
+
+        CustomerAccountUtil.updateNameForAuthenticatedCustomer(customer, request);
+
+        String redirectOption = request.getParameter("redirect");
+
+        LOGGER.info("CustomerController | updateAccountDetails | redirectOption : " + redirectOption);
+
+        String redirectURL = "redirect:/account_details";
+
+        if ("address_book".equals(redirectOption)) {
+            redirectURL = "redirect:/address_book";
+        }
+
+        LOGGER.info("CustomerController | updateAccountDetails | redirectURL : " + redirectURL);
+
+        return redirectURL;
+    }
 
 }
