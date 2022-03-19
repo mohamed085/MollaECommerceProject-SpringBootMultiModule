@@ -4,6 +4,10 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.molla.common.entity.Address;
+import com.molla.common.entity.ShippingRate;
+import com.molla.site.service.AddressService;
+import com.molla.site.service.ShippingRateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,15 +29,17 @@ public class ShoppingCartController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ShoppingCartController.class);
 
-    private CustomerService customerService;
+    private final CustomerService customerService;
+    private final ShoppingCartService cartService;
+    private final AddressService addressService;
+    private final ShippingRateService shipService;
 
-    private ShoppingCartService cartService;
-
-    @Autowired
-    public ShoppingCartController(CustomerService customerService, ShoppingCartService cartService) {
+    public ShoppingCartController(CustomerService customerService, ShoppingCartService cartService, AddressService addressService, ShippingRateService shippingRateService) {
         super();
         this.customerService = customerService;
         this.cartService = cartService;
+        this.addressService = addressService;
+        this.shipService = shippingRateService;
     }
 
     @GetMapping("/cart")
@@ -53,6 +59,24 @@ public class ShoppingCartController {
             LOGGER.info("ShoppingCartController | viewCart | item.getSubtotal() : " + item.getSubtotal());
             estimatedTotal += item.getSubtotal();
         }
+
+        Address defaultAddress = addressService.getDefaultAddress(customer);
+
+        ShippingRate shippingRate = null;
+        boolean usePrimaryAddressAsDefault = false;
+
+        if (defaultAddress != null) {
+            shippingRate = shipService.getShippingRateForAddress(defaultAddress);
+        } else {
+            usePrimaryAddressAsDefault = true;
+            shippingRate = shipService.getShippingRateForCustomer(customer);
+        }
+
+        LOGGER.info("ShoppingCartController | viewCart | usePrimaryAddressAsDefault : " + usePrimaryAddressAsDefault);
+        LOGGER.info("ShoppingCartController | viewCart | shippingSupported : " + (shippingRate != null));
+
+        model.addAttribute("usePrimaryAddressAsDefault", usePrimaryAddressAsDefault);
+        model.addAttribute("shippingSupported", shippingRate != null);
 
         model.addAttribute("cartItems", cartItems);
         model.addAttribute("estimatedTotal", estimatedTotal);

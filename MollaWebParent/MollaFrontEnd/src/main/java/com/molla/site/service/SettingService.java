@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import com.molla.site.model.CurrencySettingBag;
+import com.molla.site.model.PaymentSettingBag;
 import com.molla.site.repository.SettingRepository;
 import com.molla.site.service.impl.ISettingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +34,21 @@ public class SettingService implements ISettingService {
         settings.addAll(repo.findByCategory(SettingCategory.MAIL_TEMPLATES));
 
         return new EmailSettingBag(settings);
+    }
+
+    @Override
+    public CurrencySettingBag getCurrencySettings() {
+        return null;
+    }
+
+    @Override
+    public String getCurrencyCode() {
+        return null;
+    }
+
+    @Override
+    public PaymentSettingBag getPaymentSettings() {
+        return null;
     }
 
 }

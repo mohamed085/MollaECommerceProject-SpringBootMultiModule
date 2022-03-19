@@ -2,6 +2,9 @@ package com.molla.site.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.molla.common.entity.ShippingRate;
+import com.molla.site.service.AddressService;
+import com.molla.site.service.ShippingRateService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +26,8 @@ public class ShoppingCartRestController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ShoppingCartRestController.class);
 
     private ShoppingCartService cartService;
-
     private CustomerService customerService;
+
 
     @Autowired
     public ShoppingCartRestController(ShoppingCartService cartService, CustomerService customerService) {

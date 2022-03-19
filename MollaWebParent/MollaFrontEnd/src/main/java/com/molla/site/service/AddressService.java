@@ -49,5 +49,9 @@ public class AddressService implements IAddressService{
         repo.setNonDefaultForOthers(defaultAddressId, customerId);
     }
 
+    @Override
+    public Address getDefaultAddress(Customer customer) {
+        return repo.findDefaultByCustomer(customer.getId());
+    }
 }
 
