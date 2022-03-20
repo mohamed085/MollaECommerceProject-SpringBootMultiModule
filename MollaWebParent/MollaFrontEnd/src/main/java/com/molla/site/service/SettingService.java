@@ -20,25 +20,26 @@ import com.molla.common.entity.SettingCategory;
 public class SettingService implements ISettingService {
 
     @Autowired
-    private SettingRepository repo;
+    private SettingRepository settingRepo;
 
     @Override
     public List<Setting> getGeneralSettings() {
         // TODO Auto-generated method stub
-        return repo.findByTwoCategories(SettingCategory.GENERAL, SettingCategory.CURRENCY);
+        return settingRepo.findByTwoCategories(SettingCategory.GENERAL, SettingCategory.CURRENCY);
     }
 
     @Override
     public EmailSettingBag getEmailSettings() {
-        List<Setting> settings = repo.findByCategory(SettingCategory.MAIL_SERVER);
-        settings.addAll(repo.findByCategory(SettingCategory.MAIL_TEMPLATES));
+        List<Setting> settings = settingRepo.findByCategory(SettingCategory.MAIL_SERVER);
+        settings.addAll(settingRepo.findByCategory(SettingCategory.MAIL_TEMPLATES));
 
         return new EmailSettingBag(settings);
     }
 
     @Override
     public CurrencySettingBag getCurrencySettings() {
-        return null;
+        List<Setting> settings = settingRepo.findByCategory(SettingCategory.CURRENCY);
+        return new CurrencySettingBag(settings);
     }
 
     @Override

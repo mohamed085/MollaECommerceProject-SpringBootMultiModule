@@ -13,11 +13,14 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "cart_items")
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 public class CartItem implements Serializable {
 
@@ -36,7 +39,21 @@ public class CartItem implements Serializable {
     private int quantity;
 
     @Transient
+    private float shippingCost;
+
+    @Transient
     public float getSubtotal() {
         return product.getDiscountPrice() * quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "CartItem{" +
+                "id=" + id +
+                ", customer=" + customer +
+                ", product=" + product +
+                ", quantity=" + quantity +
+                ", shippingCost=" + shippingCost +
+                '}';
     }
 }

@@ -21,9 +21,6 @@ public class CustomerUserDetails implements UserDetails {
     private Customer customer;
 
     public CustomerUserDetails(Customer customer) {
-
-        LOGGER.info("CustomerUserDetails | customer: " + customer.toString());
-
         this.customer = customer;
     }
 
@@ -34,15 +31,11 @@ public class CustomerUserDetails implements UserDetails {
 
     @Override
     public String getPassword() {
-        LOGGER.info("CustomerUserDetails | password: " + customer.getPassword());
-
         return customer.getPassword();
     }
 
     @Override
     public String getUsername() {
-        LOGGER.info("CustomerUserDetails | username: " + customer.getEmail());
-
         return customer.getEmail();
     }
 
@@ -63,15 +56,10 @@ public class CustomerUserDetails implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        LOGGER.info("CustomerUserDetails | isEnabled: " + customer.isEnabled());
-
         return customer.isEnabled();
     }
 
     public String getFullName() {
-
-        LOGGER.info("CustomerUserDetails | getFullName: " + customer.getFirstName() + " " + customer.getLastName());
-
         return customer.getFirstName() + " " + customer.getLastName();
     }
 
