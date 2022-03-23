@@ -26,7 +26,7 @@
 						<b>Expected deliver date: </b>[[${#dates.format(checkoutInfo.deliverDate, 'E, dd MMM yyyy')}]]
 					</p>
 				</div>
-			</div>		
+			</div>
 
 			<div class="card mt-3 mb-3">
 				<div class="card-header"><h5>Payment Method</h5></div>
@@ -40,13 +40,13 @@
 							</p>
 						</form>
 					</div>
-					
+
 					<div id="paypal-button-container"></div>
 					<form th:action="@{/process_paypal_order}" method="post" id="paypalForm">
-							<input type="hidden" name="orderId" id="orderId" />
-							<input type="hidden" name="paymentMethod" value="PAYPAL" />
+						<input type="hidden" name="orderId" id="orderId" />
+						<input type="hidden" name="paymentMethod" value="PAYPAL" />
 					</form>
-				</div>			
+				</div>
 			</div>
 		</div>
 
@@ -55,24 +55,24 @@
 				<div class="card-header"><h5>Order Summary</h5></div>
 				<div class="card-body">
 					<div>
-					<table>
-						<th:block th:each="item : ${cartItems}">
-						<tr th:with="product = ${item.product}">
-							<td>[[${item.quantity}]] X &nbsp;&nbsp;</td>
-							<td width="70%">
-								<a th:href="@{'/p/' + ${product.alias}}" target="_blank">
-									[[${product.shortName}]]
-								</a>
-								<br/>
-								<small>Ship: <div th:replace="fragments :: format_currency(${item.shippingCost})"></div></small>
-							</td>
-							<td>
-								<div th:replace="fragments :: format_currency(${item.subtotal})"></div>
-							</td>
-						</tr>
-						</th:block>
-						<tr><td colspan="3"><hr/></tr>
-					</table>
+						<table>
+							<th:block th:each="item : ${cartItems}">
+								<tr th:with="product = ${item.product}">
+									<td>[[${item.quantity}]] X &nbsp;&nbsp;</td>
+									<td width="70%">
+										<a th:href="@{'/p/' + ${product.alias}}" target="_blank">
+											[[${product.shortName}]]
+										</a>
+										<br/>
+										<small>Ship: <div th:replace="fragments :: format_currency(${item.shippingCost})"></div></small>
+									</td>
+									<td>
+										<div th:replace="fragments :: format_currency(${item.subtotal})"></div>
+									</td>
+								</tr>
+							</th:block>
+							<tr><td colspan="3"><hr/></tr>
+						</table>
 					</div>
 
 					<div class="row mt-2">
@@ -88,18 +88,18 @@
 					<div class="row mt-2">
 						<div class="col">Payment Total: </div>
 						<div class="col"><b><div th:replace="fragments :: format_currency(${checkoutInfo.paymentTotal})"></div></b></div>
-					</div>										
+					</div>
 				</div>
-			</div>		
-		</div>		
+			</div>
+		</div>
 	</div>
 
 	<div th:replace="fragments :: modal_dialog"></div>
 	<div th:replace="navigation :: footer_menu"></div>
-	
+
 </div>
 </body>
-<!--<script th:src="@{https://www.paypal.com/sdk/js(client-id=${paypalClientId},currency=${currencyCode})}"></script>-->
+<script th:src="@{https://www.paypal.com/sdk/js(client-id=${paypalClientId},currency=${currencyCode})}"></script>
 <script type="text/javascript" th:src="@{/js/common_modal.js}"></script>
 <script type="text/javascript">
 	contextPath = "[[@{/}]]";
@@ -111,12 +111,12 @@
 			$("#buttonSubmit").removeClass("d-none");
 		});
 	});
-	
+
 	function validateOrder(orderId) {
 		$("#orderId").val(orderId);
 		$("#paypalForm").submit();
 	}
-	
+
 	paypal.Buttons({
 		enableStandardCardFields: true,
 		createOrder: function(data, actions) {
@@ -126,8 +126,8 @@
 				intent: 'CAPTURE', // make payment immediately
 				payer: {
 					name: {
-					given_name: "[[${customer.firstName}]]",
-					surname: "[[${customer.lastName}]]"
+						given_name: "[[${customer.firstName}]]",
+						surname: "[[${customer.lastName}]]"
 					},
 
 					address: {
@@ -169,7 +169,7 @@
 				orderId = details.id;
 				// totalAmount = details.purchase_units[0].amount.value;
 
-				validateOrder(orderId);	
+				validateOrder(orderId);
 			});
 		},
 

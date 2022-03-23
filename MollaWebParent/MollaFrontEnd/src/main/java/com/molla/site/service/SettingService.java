@@ -4,8 +4,10 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import com.molla.common.entity.Currency;
 import com.molla.site.model.CurrencySettingBag;
 import com.molla.site.model.PaymentSettingBag;
+import com.molla.site.repository.CurrencyRepository;
 import com.molla.site.repository.SettingRepository;
 import com.molla.site.service.impl.ISettingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,8 +21,16 @@ import com.molla.common.entity.SettingCategory;
 @Transactional
 public class SettingService implements ISettingService {
 
-    @Autowired
     private SettingRepository settingRepo;
+
+    private CurrencyRepository currencyRepo;
+
+    @Autowired
+    public SettingService(SettingRepository settingRepo, CurrencyRepository currencyRepo) {
+        super();
+        this.settingRepo = settingRepo;
+        this.currencyRepo = currencyRepo;
+    }
 
     @Override
     public List<Setting> getGeneralSettings() {
@@ -43,13 +53,18 @@ public class SettingService implements ISettingService {
     }
 
     @Override
-    public String getCurrencyCode() {
-        return null;
+    public PaymentSettingBag getPaymentSettings() {
+        List<Setting> settings = settingRepo.findByCategory(SettingCategory.PAYMENT);
+        return new PaymentSettingBag(settings);
     }
 
     @Override
-    public PaymentSettingBag getPaymentSettings() {
-        return null;
+    public String getCurrencyCode() {
+        Setting setting = settingRepo.findByKey("CURRENCY_ID");
+        Integer currencyId = Integer.parseInt(setting.getValue());
+        Currency currency = currencyRepo.findById(currencyId).get();
+
+        return currency.getCode();
     }
 
 }

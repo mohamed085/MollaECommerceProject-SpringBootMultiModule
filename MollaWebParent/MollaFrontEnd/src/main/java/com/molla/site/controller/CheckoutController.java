@@ -3,6 +3,7 @@ package com.molla.site.controller;
 import com.molla.common.entity.*;
 import com.molla.common.exception.CustomerNotFoundException;
 import com.molla.site.model.CheckoutInfo;
+import com.molla.site.model.PaymentSettingBag;
 import com.molla.site.service.*;
 import com.molla.site.util.AuthenticationControllerHelperUtil;
 import com.molla.site.util.OrderUtil;
@@ -82,13 +83,13 @@ public class CheckoutController {
 
         // Paypal
         String currencyCode = settingService.getCurrencyCode();
-//        PaymentSettingBag paymentSettings = settingService.getPaymentSettings();
-//        String paypalClientId = paymentSettings.getClientID();
-//
-//        LOGGER.info("CheckoutController | showCheckoutPage | paypalClientId " + paypalClientId);
+        PaymentSettingBag paymentSettings = settingService.getPaymentSettings();
+        String paypalClientId = paymentSettings.getClientID();
+
+        LOGGER.info("CheckoutController | showCheckoutPage | paypalClientId " + paypalClientId);
         LOGGER.info("CheckoutController | showCheckoutPage | currencyCode " + currencyCode);
 
-//        model.addAttribute("paypalClientId", paypalClientId);
+        model.addAttribute("paypalClientId", paypalClientId);
         model.addAttribute("currencyCode", currencyCode);
         model.addAttribute("customer", customer);
 

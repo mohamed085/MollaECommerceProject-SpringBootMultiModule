@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class CheckoutInfo {
+
     private float productCost;
     private float productTotal;
     private float shippingCostTotal;
@@ -72,15 +73,4 @@ public class CheckoutInfo {
         return formatter.format(paymentTotal);
     }
 
-    @Override
-    public String toString() {
-        return "CheckoutInfo{" +
-                "productCost=" + productCost +
-                ", productTotal=" + productTotal +
-                ", shippingCostTotal=" + shippingCostTotal +
-                ", paymentTotal=" + paymentTotal +
-                ", deliverDays=" + deliverDays +
-                ", codSupported=" + codSupported +
-                '}';
-    }
 }
