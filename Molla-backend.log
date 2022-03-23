@@ -1,31 +1,38 @@
-2022-03-23 21:49:22.698  INFO 11720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-03-23 21:49:22.714  INFO 11720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-03-23 21:49:22.715  INFO 11720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
-2022-03-23 21:49:22.889  INFO 11720 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
-2022-03-23 21:49:22.889  INFO 11720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3001 ms
-2022-03-23 21:49:23.133  INFO 11720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-03-23 21:49:23.189  INFO 11720 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
-2022-03-23 21:49:23.349  INFO 11720 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-03-23 21:49:23.468  INFO 11720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-03-23 21:49:23.650  INFO 11720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-03-23 21:49:23.682  INFO 11720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-03-23 21:49:25.497  INFO 11720 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-03-23 21:49:25.516  INFO 11720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-03-23 21:49:25.791  WARN 11720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-03-23 21:49:27.834  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-23 21:49:27.836  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
-2022-03-23 21:49:27.837  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-23 21:49:27.837  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
-2022-03-23 21:49:27.838  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-23 21:49:27.840  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
-2022-03-23 21:49:27.840  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
-2022-03-23 21:49:27.841  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
-2022-03-23 21:49:27.914  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
-2022-03-23 21:49:28.359  INFO 11720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2022-03-23 21:49:31.091  INFO 11720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-03-23 21:49:31.174  INFO 11720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MollaAdmin'
-2022-03-23 21:49:31.227  INFO 11720 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Started MollaBackEndApplication in 12.746 seconds (JVM running for 15.513)
-2022-03-23 21:49:34.086  INFO 11720 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-03-23 21:49:34.089  INFO 11720 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-03-23 21:49:34.092  INFO 11720 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-03-23 21:49:34.833  WARN 11720 --- [http-nio-8080-exec-10] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [354] milliseconds.
+2022-03-23 22:36:20.778  INFO 11720 --- [http-nio-8080-exec-4] c.m.admin.controller.AccountController   : SettingController | listAll | setting.getKey() : SITE_LOGO | setting.getValue() : /site-logo/logo-footer.png
+2022-03-23 22:36:20.781  INFO 11720 --- [http-nio-8080-exec-4] c.m.admin.controller.AccountController   : SettingController | listAll | setting.getKey() : SITE_NAME | setting.getValue() : Molla
+2022-03-23 22:36:20.782  INFO 11720 --- [http-nio-8080-exec-4] c.m.admin.controller.AccountController   : SettingController | listAll | setting.getKey() : SMTP_AUTH | setting.getValue() : true
+2022-03-23 22:36:20.790  INFO 11720 --- [http-nio-8080-exec-4] c.m.admin.controller.AccountController   : SettingController | listAll | setting.getKey() : SMTP_SECURED | setting.getValue() : true
+2022-03-23 22:36:20.790  INFO 11720 --- [http-nio-8080-exec-4] c.m.admin.controller.AccountController   : SettingController | listAll | setting.getKey() : THOUSANDS_POINT_TYPE | setting.getValue() : COMMA
+2022-03-23 22:42:48.878  INFO 11720 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-23 22:42:48.890  INFO 11720 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-23 22:42:48.905  INFO 11720 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-23 22:42:49.491  INFO 11720 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Starting MollaBackEndApplication using Java 11.0.11 on DESKTOP-VU2MQQ8 with PID 11720 (E:\Materials\Java\Spring\Projects\MollaECommerceProject\MollaWebParent\MollaBackEnd\target\classes started by Mohamed in E:\Materials\Java\Spring\Projects\MollaECommerceProject)
+2022-03-23 22:42:49.492  INFO 11720 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-23 22:42:53.559  INFO 11720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-23 22:42:53.797  INFO 11720 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 12 JPA repository interfaces.
+2022-03-23 22:42:54.621  INFO 11720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-23 22:42:54.624  INFO 11720 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-23 22:42:54.624  INFO 11720 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-23 22:42:54.711  INFO 11720 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
+2022-03-23 22:42:54.712  INFO 11720 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5213 ms
+2022-03-23 22:42:55.196  INFO 11720 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-23 22:42:55.245  INFO 11720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-23 22:42:55.289  INFO 11720 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-23 22:42:55.290  INFO 11720 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-23 22:42:56.815  INFO 11720 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-23 22:42:56.815  INFO 11720 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-23 22:42:56.878  WARN 11720 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-23 22:42:58.265  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-23 22:42:58.266  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2022-03-23 22:42:58.267  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-23 22:42:58.268  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-03-23 22:42:58.268  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-23 22:42:58.268  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2022-03-23 22:42:58.268  WARN 11720 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-23 22:42:58.268  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-03-23 22:42:58.311  INFO 11720 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-23 22:42:58.518  INFO 11720 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-23 22:42:59.632  INFO 11720 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-23 22:42:59.653  INFO 11720 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MollaAdmin'
+2022-03-23 22:42:59.660  INFO 11720 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Started MollaBackEndApplication in 10.445 seconds (JVM running for 3223.946)
+2022-03-23 22:42:59.663  INFO 11720 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

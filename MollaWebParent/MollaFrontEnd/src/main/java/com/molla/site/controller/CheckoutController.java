@@ -2,6 +2,7 @@ package com.molla.site.controller;
 
 import com.molla.common.entity.*;
 import com.molla.common.exception.CustomerNotFoundException;
+import com.molla.common.exception.PayPalApiException;
 import com.molla.site.model.CheckoutInfo;
 import com.molla.site.model.PaymentSettingBag;
 import com.molla.site.service.*;
@@ -29,11 +30,13 @@ public class CheckoutController {
     private final ShoppingCartService cartService;
     private final SettingService settingService;
     private final OrderService orderService;
+    private final PayPalService paypalService;
     private final AuthenticationControllerHelperUtil authenticationControllerHelperUtil;
 
     public CheckoutController(CheckoutService checkoutService, AddressService addressService,
                               ShippingRateService shipService, ShoppingCartService cartService,
                               SettingService settingService, OrderService orderService,
+                              PayPalService paypalService,
                               AuthenticationControllerHelperUtil authenticationControllerHelperUtil) {
         this.checkoutService = checkoutService;
         this.addressService = addressService;
@@ -41,6 +44,7 @@ public class CheckoutController {
         this.cartService = cartService;
         this.settingService = settingService;
         this.orderService = orderService;
+        this.paypalService = paypalService;
         this.authenticationControllerHelperUtil = authenticationControllerHelperUtil;
     }
 
@@ -103,37 +107,46 @@ public class CheckoutController {
     }
 
     @PostMapping("/place_order")
-    public String placeOrder(HttpServletRequest request) {
+    public String placeOrder(HttpServletRequest request) throws CustomerNotFoundException {
+
         LOGGER.info("CheckoutController | placeOrder is called");
 
         String paymentType = request.getParameter("paymentMethod");
+
+        LOGGER.info("CheckoutController | placeOrder | paymentType :  " + paymentType);
+
         PaymentMethod paymentMethod = PaymentMethod.valueOf(paymentType);
 
-        LOGGER.info("CheckoutController | placeOrder | paymentType: " + paymentType);
-        LOGGER.info("CheckoutController | placeOrder | paymentMethod: " + paymentMethod);
+        LOGGER.info("CheckoutController | placeOrder | paymentMethod :  " + paymentMethod.toString());
 
         Customer customer = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
-        LOGGER.info("CheckoutController | placeOrder | customer : " + customer.toString());
+        LOGGER.info("CheckoutController | placeOrder | customer :  " + customer.toString());
 
         Address defaultAddress = addressService.getDefaultAddress(customer);
-
         ShippingRate shippingRate = null;
+
+        LOGGER.info("CheckoutController | placeOrder | defaultAddress != null :  " + (defaultAddress != null));
 
         if (defaultAddress != null) {
             shippingRate = shipService.getShippingRateForAddress(defaultAddress);
-            LOGGER.info("CheckoutController | placeOrder | defaultAddress != null | shippingRate " + shippingRate.toString());
+
+            LOGGER.info("CheckoutController | placeOrder | shippingRate :  " + shippingRate.toString());
+
         } else {
             shippingRate = shipService.getShippingRateForCustomer(customer);
-            LOGGER.info("CheckoutController | placeOrder | defaultAddress == null | shippingRate " + shippingRate.toString());
-        }
 
-        LOGGER.info("CheckoutController | placeOrder | shippingRate " + shippingRate.toString());
+            LOGGER.info("CheckoutController | placeOrder | shippingRate :  " + shippingRate.toString());
+        }
 
         List<CartItem> cartItems = cartService.listCartItems(customer);
         CheckoutInfo checkoutInfo = checkoutService.prepareCheckout(cartItems, shippingRate);
 
+        LOGGER.info("CheckoutController | placeOrder | cartItems " + cartItems.toString());
+        LOGGER.info("CheckoutController | placeOrder | checkoutInfo " + checkoutInfo.toString());
+
         Order createdOrder = orderService.createOrder(customer, defaultAddress, cartItems, paymentMethod, checkoutInfo);
+
         cartService.deleteByCustomer(customer);
 
         try {
@@ -145,5 +158,48 @@ public class CheckoutController {
         }
 
         return "checkout/order_completed";
+    }
+
+    @PostMapping("/process_paypal_order")
+    public String processPayPalOrder(HttpServletRequest request, Model model)
+            throws UnsupportedEncodingException, MessagingException, CustomerNotFoundException {
+
+        LOGGER.info("CheckoutController | processPayPalOrder is called");
+
+        String orderId = request.getParameter("orderId");
+
+        LOGGER.info("CheckoutController | processPayPalOrder | orderId :  " + orderId);
+
+        String pageTitle = "Checkout Failure";
+        String message = null;
+
+        LOGGER.info("CheckoutController | processPayPalOrder | pageTitle :  " + pageTitle);
+
+        try {
+            if (paypalService.validateOrder(orderId)) {
+                LOGGER.info("CheckoutController | processPayPalOrder | paypalService.validateOrder(orderId) :  " + (paypalService.validateOrder(orderId)));
+                return placeOrder(request);
+            } else {
+                pageTitle = "Checkout Failure";
+                message = "ERROR: Transaction could not be completed because order information is invalid";
+
+                LOGGER.info("CheckoutController | processPayPalOrder | pageTitle :  " + pageTitle);
+                LOGGER.info("CheckoutController | processPayPalOrder | message :  " + message);
+
+            }
+        } catch (PayPalApiException e) {
+            message = "ERROR: Transaction failed due to error: " + e.getMessage();
+            LOGGER.info("CheckoutController | processPayPalOrder | message :  " + e.getMessage());
+        }
+
+        model.addAttribute("pageTitle", pageTitle);
+        model.addAttribute("title", pageTitle);
+        model.addAttribute("message", message);
+
+        LOGGER.info("CheckoutController | processPayPalOrder | pageTitle :  " + pageTitle);
+        LOGGER.info("CheckoutController | processPayPalOrder | title :  " + pageTitle);
+        LOGGER.info("CheckoutController | processPayPalOrder | message :  " + message);
+
+        return "message";
     }
 }
