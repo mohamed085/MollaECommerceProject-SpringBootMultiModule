@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.molla.admin.repository.StateRepository;
 import com.molla.common.entity.Country;
 import com.molla.common.entity.State;
-import com.molla.common.dto.StateDTO;
+import com.molla.common.entity.StateDTO;
 
 @RestController
 public class StateRestController {

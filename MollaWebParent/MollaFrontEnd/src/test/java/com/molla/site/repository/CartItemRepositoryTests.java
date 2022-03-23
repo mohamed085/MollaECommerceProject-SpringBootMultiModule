@@ -1,6 +1,5 @@
 package com.molla.site.repository;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
@@ -16,7 +15,6 @@ import org.springframework.test.annotation.Rollback;
 import com.molla.common.entity.CartItem;
 import com.molla.common.entity.Customer;
 import com.molla.common.entity.Product;
-import com.molla.site.repository.CartItemRepository;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)

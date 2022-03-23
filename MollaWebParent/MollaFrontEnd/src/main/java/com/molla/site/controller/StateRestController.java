@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.molla.common.entity.Country;
 import com.molla.common.entity.State;
-import com.molla.common.dto.StateDTO;
+import com.molla.common.entity.StateDTO;
 import com.molla.site.repository.StateRepository;
 
 @RestController

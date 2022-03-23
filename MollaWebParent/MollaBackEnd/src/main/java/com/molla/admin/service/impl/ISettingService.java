@@ -18,4 +18,7 @@ public interface ISettingService {
 	public List<Setting> getMailTemplateSettings();
 
 	public List<Setting> getCurrencySettings();
+
+	public List<Setting> getPaymentSettings();
+
 }

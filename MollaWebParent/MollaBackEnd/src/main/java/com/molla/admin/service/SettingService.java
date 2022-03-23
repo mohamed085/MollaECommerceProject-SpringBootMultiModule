@@ -3,7 +3,6 @@ package com.molla.admin.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.molla.admin.repository.SettingRepository;
@@ -58,5 +57,10 @@ public class SettingService implements ISettingService{
 	@Override
 	public List<Setting> getCurrencySettings() {
 		return repo.findByCategory(SettingCategory.CURRENCY);
+	}
+
+	@Override
+	public List<Setting> getPaymentSettings(){
+		return repo.findByCategory(SettingCategory.PAYMENT);
 	}
 }

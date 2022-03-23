@@ -5,38 +5,38 @@ import java.util.List;
 
 public class SettingBag implements Serializable{
 
-    private List<Setting> listSettings;
+	private List<Setting> listSettings;
 
-    public SettingBag(List<Setting> listSettings) {
-        this.listSettings = listSettings;
-    }
+	public SettingBag(List<Setting> listSettings) {
+		this.listSettings = listSettings;
+	}
 
-    public Setting get(String key) {
-        int index = listSettings.indexOf(new Setting(key));
-        if (index >= 0) {
-            return listSettings.get(index);
-        }
+	public Setting get(String key) {
+		int index = listSettings.indexOf(new Setting(key));
+		if (index >= 0) {
+			return listSettings.get(index);
+		}
 
-        return null;
-    }
+		return null;
+	}
 
-    public String getValue(String key) {
-        Setting setting = get(key);
-        if (setting != null) {
-            return setting.getValue();
-        }
+	public String getValue(String key) {
+		Setting setting = get(key);
+		if (setting != null) {
+			return setting.getValue();
+		}
 
-        return null;
-    }
+		return null;
+	}
 
-    public void update(String key, String value) {
-        Setting setting = get(key);
-        if (setting != null && value != null) {
-            setting.setValue(value);
-        }
-    }
+	public void update(String key, String value) {
+		Setting setting = get(key);
+		if (setting != null && value != null) {
+			setting.setValue(value);
+		}
+	}
 
-    public List<Setting> list() {
-        return listSettings;
-    }
+	public List<Setting> list() {
+		return listSettings;
+	}
 }

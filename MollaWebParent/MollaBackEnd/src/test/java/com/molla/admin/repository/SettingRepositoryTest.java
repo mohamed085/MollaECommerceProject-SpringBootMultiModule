@@ -51,6 +51,19 @@ class SettingRepositoryTest {
     }
 
     @Test
+    public void testCreatePaymentSettings() {
+        List<Setting> settings = Arrays.asList(
+                new Setting("ORDER_CONFIRMATION_SUBJECT", "", SettingCategory.MAIL_TEMPLATES),
+                new Setting("ORDER_CONFIRMATION_CONTENT", "", SettingCategory.MAIL_TEMPLATES),
+                new Setting("PAYPAL_API_BASE_URL", "", SettingCategory.PAYMENT),
+                new Setting("PAYPAL_API_CLIENT_ID", "", SettingCategory.PAYMENT),
+                new Setting("PAYPAL_API_CLIENT_SECRET", "", SettingCategory.PAYMENT)
+        );
+        repo.saveAll(settings);
+
+    }
+
+    @Test
     public void testCreateEmailSettings() {
         List<Setting> settings = Arrays.asList(
                 new Setting("MAIL_HOST", "smtp.gmail.com", SettingCategory.MAIL_SERVER),

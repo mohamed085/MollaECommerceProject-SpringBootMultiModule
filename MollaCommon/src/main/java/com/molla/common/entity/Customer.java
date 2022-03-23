@@ -18,98 +18,62 @@ import javax.persistence.Transient;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 @Entity
 @Table(name = "customers")
 @NoArgsConstructor
 @Getter
 @Setter
-public class Customer implements Serializable{
+public class Customer extends AbstractAddressWithCountry implements Serializable{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+	@Column(nullable = false, unique = true, length = 45)
+	private String email;
 
-    @Column(nullable = false, unique = true, length = 45)
-    private String email;
+	@Column(nullable = false, length = 64)
+	private String password;
 
-    @Column(nullable = false, length = 64)
-    private String password;
+	@Column(name = "verification_code", length = 64)
+	private String verificationCode;	
 
-    @Column(name = "first_name", nullable = false, length = 45)
-    private String firstName;
+	private boolean enabled;
 
-    @Column(name = "last_name", nullable = false, length = 45)
-    private String lastName;
+	@Column(name = "created_time")
+	private Date createdTime;
 
-    @Column(name = "phone_number", nullable = false, length = 15)
-    private String phoneNumber;
+	@Enumerated(EnumType.STRING)
+	@Column(name = "authentication_type", length = 10)
+	private AuthenticationType authenticationType;
+	
+	@Column(name = "reset_password_token", length = 30)
+	private String resetPasswordToken;
+	
+	public Customer(Integer id) {
+		this.id = id;
+	}
+	
+	public String getFullName() {
+		return firstName + " " + lastName;
+	}
+	
+	@Transient
+	public String getAddress() {
+		String address = firstName;
 
-    @Column(nullable = false, length = 64)
-    private String addressLine1;
+		if (lastName != null && !lastName.isEmpty()) address += " " + lastName;
 
-    @Column(name = "address_line_2", length = 64)
-    private String addressLine2;
+		if (!addressLine1.isEmpty()) address += ", " + addressLine1;
 
-    @Column(nullable = false, length = 45)
-    private String city;
+		if (addressLine2 != null && !addressLine2.isEmpty()) address += ", " + addressLine2;
 
-    @Column(nullable = false, length = 45)
-    private String state;
+		if (!city.isEmpty()) address += ", " + city;
 
-    @Column(name = "postal_code", nullable = false, length = 10)
-    private String postalCode;
+		if (state != null && !state.isEmpty()) address += ", " + state;
 
-    @Column(name = "verification_code", length = 64)
-    private String verificationCode;
+		address += ", " + country.getName();
 
-    private boolean enabled;
+		if (!postalCode.isEmpty()) address += ". Postal Code: " + postalCode;
+		if (!phoneNumber.isEmpty()) address += ". Phone Number: " + phoneNumber;
 
-    @Column(name = "created_time")
-    private Date createdTime;
-
-    @ManyToOne
-    @JoinColumn(name = "country_id")
-    private Country country;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "authentication_type", length = 10)
-    private AuthenticationType authenticationType;
-
-    @Column(name = "reset_password_token", length = 30)
-    private String resetPasswordToken;
-
-    public Customer(Integer id) {
-        this.id = id;
-    }
-
-    @Override
-    public String toString() {
-        return "Customer [id=" + id + ", email=" + email + ", firstName=" + firstName + ", lastName=" + lastName + "]";
-    }
-
-    public String getFullName() {
-        return firstName + " " + lastName;
-    }
-
-    @Transient
-    public String getAddress() {
-        String address = firstName;
-
-        if (lastName != null && !lastName.isEmpty()) address += " " + lastName;
-
-        if (!addressLine1.isEmpty()) address += ", " + addressLine1;
-
-        if (addressLine2 != null && !addressLine2.isEmpty()) address += ", " + addressLine2;
-
-        if (!city.isEmpty()) address += ", " + city;
-
-        if (state != null && !state.isEmpty()) address += ", " + state;
-
-        address += ", " + country.getName();
-
-        if (!postalCode.isEmpty()) address += ". Postal Code: " + postalCode;
-        if (!phoneNumber.isEmpty()) address += ". Phone Number: " + phoneNumber;
-
-        return address;
-    }
+		return address;
+	}
 }

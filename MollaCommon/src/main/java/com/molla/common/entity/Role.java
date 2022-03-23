@@ -21,40 +21,35 @@ import lombok.ToString;
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Role implements Serializable{
+public class Role extends IdBasedEntity implements Serializable{
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
+	
+	@Column(length = 40, nullable = false, unique = true)
+	private String name;
+	
+	@Column(length = 150, nullable = false)
+	private String description;
+	
+	public Role(Integer id) {
+		this.id = id;
+	}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @EqualsAndHashCode.Include()
-    private Integer id;
+	public Role(String name) {
+		this.name = name;
+	}	
+	
+	public Role(String name, String description) {
+		super();
+		this.name = name;
+		this.description = description;
+	}
 
-    @Column(length = 40, nullable = false, unique = true)
-    private String name;
-
-    @Column(length = 150, nullable = false)
-    private String description;
-
-    public Role(Integer id) {
-        this.id = id;
-    }
-
-    public Role(String name) {
-        this.name = name;
-    }
-
-    public Role(String name, String description) {
-        super();
-        this.name = name;
-        this.description = description;
-    }
-
-    @Override
-    public String toString() {
-        return this.name;
-    }
-
-
+	@Override
+	public String toString() {
+		return this.name;
+	}
+	
+	
 
 }

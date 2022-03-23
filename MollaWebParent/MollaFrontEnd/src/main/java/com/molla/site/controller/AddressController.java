@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.molla.site.util.AuthenticationControllerHelperUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,17 +26,23 @@ import com.molla.site.util.CustomerShoppingCartandAddressUtil;
 @Controller
 public class AddressController {
 
+
     private static final Logger LOGGER = LoggerFactory.getLogger(AddressController.class);
 
     private AddressService addressService;
 
     private CustomerService customerService;
 
+    private AuthenticationControllerHelperUtil authenticationControllerHelperUtil;
+
     @Autowired
-    public AddressController(AddressService addressService, CustomerService customerService) {
+    public AddressController(AddressService addressService,
+                             CustomerService customerService,
+                             AuthenticationControllerHelperUtil authenticationControllerHelperUtil) {
         super();
         this.addressService = addressService;
         this.customerService = customerService;
+        this.authenticationControllerHelperUtil = authenticationControllerHelperUtil;
     }
 
     @GetMapping("/address_book")
@@ -43,7 +50,7 @@ public class AddressController {
 
         LOGGER.info("AddressController | showAddressBook is called");
 
-        Customer customer = CustomerShoppingCartandAddressUtil.getAuthenticatedCustomer(request,customerService);
+        Customer customer = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
         LOGGER.info("AddressController | showAddressBook | customer : " + customer.toString());
 
@@ -95,7 +102,7 @@ public class AddressController {
 
         LOGGER.info("AddressController | saveAddress is called");
 
-        Customer customer = CustomerShoppingCartandAddressUtil.getAuthenticatedCustomer(request,customerService);
+        Customer customer = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
         LOGGER.info("AddressController | saveAddress | customer : " + customer.toString());
         LOGGER.info("AddressController | saveAddress | address : " + address.toString());
@@ -107,7 +114,21 @@ public class AddressController {
 
         ra.addFlashAttribute("message", "The address has been saved successfully.");
 
-        return "redirect:/address_book";
+        String redirectOption = request.getParameter("redirect");
+        String redirectURL = "redirect:/address_book";
+
+        LOGGER.info("AddressController | saveAddress | redirectOption : " + redirectOption);
+        LOGGER.info("AddressController | saveAddress | redirectURL : " + redirectURL);
+
+        if ("checkout".equals(redirectOption)) {
+            redirectURL += "?redirect=checkout";
+        }
+
+        LOGGER.info("AddressController | saveAddress | redirectURL : " + redirectURL);
+
+        return redirectURL;
+
+
     }
 
     @GetMapping("/address_book/edit/{id}")
@@ -116,7 +137,7 @@ public class AddressController {
 
         LOGGER.info("AddressController | editAddress is called");
 
-        Customer customer = CustomerShoppingCartandAddressUtil.getAuthenticatedCustomer(request,customerService);
+        Customer customer = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
         List<Country> listCountries = customerService.listAllCountries();
 
@@ -140,7 +161,7 @@ public class AddressController {
 
         LOGGER.info("AddressController | deleteAddress is called");
 
-        Customer customer = CustomerShoppingCartandAddressUtil.getAuthenticatedCustomer(request,customerService);
+        Customer customer = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
         LOGGER.info("AddressController | deleteAddress | customer : " + customer.toString());
 
@@ -159,13 +180,28 @@ public class AddressController {
 
         LOGGER.info("AddressController | setDefaultAddress is called");
 
-        Customer customer  = CustomerShoppingCartandAddressUtil.getAuthenticatedCustomer(request,customerService);
+        Customer customer  = authenticationControllerHelperUtil.getAuthenticatedCustomer(request);
 
         LOGGER.info("AddressController | setDefaultAddress | customer : " + customer.toString());
 
         addressService.setDefaultAddress(addressId, customer.getId());
 
-        return "redirect:/address_book";
+        String redirectOption = request.getParameter("redirect");
+        String redirectURL = "redirect:/address_book";
+
+        LOGGER.info("AddressController | setDefaultAddress | redirectOption : " + redirectOption);
+        LOGGER.info("AddressController | setDefaultAddress | redirectURL : " + redirectURL);
+
+        if ("cart".equals(redirectOption)) {
+            redirectURL = "redirect:/cart";
+        }else if ("checkout".equals(redirectOption)) {
+            redirectURL = "redirect:/checkout";
+        }
+
+
+        LOGGER.info("AddressController | setDefaultAddress | redirectURL : " + redirectURL);
+
+        return redirectURL;
     }
 }
 

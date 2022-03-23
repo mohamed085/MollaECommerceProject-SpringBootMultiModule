@@ -1,5 +1,5 @@
 package com.molla.common.entity;
 
 public enum AuthenticationType {
-    DATABASE, GOOGLE, FACEBOOK
+	DATABASE, GOOGLE, FACEBOOK
 }

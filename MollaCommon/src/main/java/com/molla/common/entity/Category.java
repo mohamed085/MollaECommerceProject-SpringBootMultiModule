@@ -16,6 +16,8 @@ import javax.persistence.OrderBy;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import com.molla.common.constants.Constants;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,103 +27,99 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Category implements Serializable{
+public class Category extends IdBasedEntity implements Serializable{
+	
+	@Column(length = 128, nullable = false, unique = true)
+	private String name;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+	@Column(length = 64, nullable = false, unique = true)
+	private String alias;
 
-    @Column(length = 128, nullable = false, unique = true)
-    private String name;
+	@Column(length = 128, nullable = false)
+	private String image;
 
-    @Column(length = 64, nullable = false, unique = true)
-    private String alias;
+	private boolean enabled;
+	
+	@Transient
+	private boolean hasChildren;
+	
+	@OneToOne
+	@JoinColumn(name = "parent_id")
+	private Category parent;
 
-    @Column(length = 128, nullable = false)
-    private String image;
+	@OneToMany(mappedBy = "parent")
+	@OrderBy("name asc")
+	private Set<Category> children = new HashSet<>();
+	
+	@Column(name = "all_parent_ids", length = 256, nullable = true)
+	private String allParentIDs;
+	
+	public Category(Integer id) {
+		this.id = id;
+	}
 
-    private boolean enabled;
+	public Category(String name) {
+		this.name = name;
+		this.alias = name;
+		this.image = "default.png";
+	}
 
-    @Transient
-    private boolean hasChildren;
+	public Category(String name, Category parent) {
+		this(name);
+		this.parent = parent;
+	}
+	
+	public Category(Integer id, String name, String alias) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.alias = alias;
+	}
+	
+	public static Category copyIdAndName(Category category) {
+		Category copyCategory = new Category();
+		copyCategory.setId(category.getId());
+		copyCategory.setName(category.getName());
 
-    @OneToOne
-    @JoinColumn(name = "parent_id")
-    private Category parent;
+		return copyCategory;
+	}
 
-    @OneToMany(mappedBy = "parent")
-    @OrderBy("name asc")
-    private Set<Category> children = new HashSet<>();
+	public static Category copyIdAndName(Integer id, String name) {
+		Category copyCategory = new Category();
+		copyCategory.setId(id);
+		copyCategory.setName(name);
 
-    @Column(name = "all_parent_ids", length = 256, nullable = true)
-    private String allParentIDs;
+		return copyCategory;
+	}
+	
+	public static Category copyFull(Category category) {
+		Category copyCategory = new Category();
+		copyCategory.setId(category.getId());
+		copyCategory.setName(category.getName());
+		copyCategory.setImage(category.getImage());
+		copyCategory.setAlias(category.getAlias());
+		copyCategory.setEnabled(category.isEnabled());
+		copyCategory.setHasChildren(category.getChildren().size() > 0);
+		return copyCategory;		
+	}
 
-    public Category(Integer id) {
-        this.id = id;
-    }
+	public static Category copyFull(Category category, String name) {
+		Category copyCategory = Category.copyFull(category);
+		copyCategory.setName(name);
 
-    public Category(String name) {
-        this.name = name;
-        this.alias = name;
-        this.image = "default.png";
-    }
-
-    public Category(String name, Category parent) {
-        this(name);
-        this.parent = parent;
-    }
-
-    public Category(Integer id, String name, String alias) {
-        super();
-        this.id = id;
-        this.name = name;
-        this.alias = alias;
-    }
-
-    public static Category copyIdAndName(Category category) {
-        Category copyCategory = new Category();
-        copyCategory.setId(category.getId());
-        copyCategory.setName(category.getName());
-
-        return copyCategory;
-    }
-
-    public static Category copyIdAndName(Integer id, String name) {
-        Category copyCategory = new Category();
-        copyCategory.setId(id);
-        copyCategory.setName(name);
-
-        return copyCategory;
-    }
-
-    public static Category copyFull(Category category) {
-        Category copyCategory = new Category();
-        copyCategory.setId(category.getId());
-        copyCategory.setName(category.getName());
-        copyCategory.setImage(category.getImage());
-        copyCategory.setAlias(category.getAlias());
-        copyCategory.setEnabled(category.isEnabled());
-        copyCategory.setHasChildren(category.getChildren().size() > 0);
-        return copyCategory;
-    }
-
-    public static Category copyFull(Category category, String name) {
-        Category copyCategory = Category.copyFull(category);
-        copyCategory.setName(name);
-
-        return copyCategory;
-    }
-
-    @Transient
-    public String getImagePath() {
-
-        if (this.id == null) return "/images/image-thumbnail.png";
-
-        return "/category-images/" + this.id + "/" + this.image;
-    }
-
-    @Override
-    public String toString() {
-        return this.name;
-    }
+		return copyCategory;
+	}
+	
+	@Transient
+	public String getImagePath() {
+		
+		if (this.id == null) return "/images/image-thumbnail.png";
+		
+		return Constants.S3_BASE_URI + "/category-images/" + this.id + "/" + this.image;
+	}
+	
+	@Override
+	public String toString() {
+		return this.name;
+	}
 }
