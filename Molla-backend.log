@@ -59,3 +59,36 @@
 2022-03-24 16:14:00.923  INFO 17392 --- [http-nio-8080-exec-1] c.m.admin.controller.AccountController   : AccountController | viewDetails is called
 2022-03-24 16:14:00.923  INFO 17392 --- [http-nio-8080-exec-1] c.m.admin.controller.AccountController   : AccountController | viewDetails | email : zirri.mohamed@gmail.com
 2022-03-24 16:14:01.036  INFO 17392 --- [http-nio-8080-exec-1] c.m.admin.controller.AccountController   : AccountController | viewDetails | user : User(email=zirri.mohamed@gmail.com, password=$2a$10$TmvyH1AoyDqRmQ4uC8NAZOOV29CPEDGuxVsHLP1cJoHQGr78L4kjW, firstName=Mohamed, lastName=Zirri, photos=Mohamed Zirri.jpg, enabled=true, roles=[Shipper])
+2022-03-24 16:27:13.303  INFO 17392 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 16:27:13.347  INFO 17392 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-24 16:27:13.361  INFO 17392 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-24 16:27:13.582  INFO 17392 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Starting MollaBackEndApplication using Java 11.0.11 on DESKTOP-VU2MQQ8 with PID 17392 (E:\Materials\Java\Spring\Projects\MollaECommerceProject\MollaWebParent\MollaBackEnd\target\classes started by Mohamed in E:\Materials\Java\Spring\Projects\MollaECommerceProject)
+2022-03-24 16:27:13.583  INFO 17392 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-03-24 16:27:14.023  INFO 17392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-24 16:27:14.090  INFO 17392 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 12 JPA repository interfaces.
+2022-03-24 16:27:14.247  INFO 17392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-03-24 16:27:14.248  INFO 17392 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-24 16:27:14.248  INFO 17392 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-24 16:27:14.283  INFO 17392 --- [restartedMain] o.a.c.c.C.[.[localhost].[/MollaAdmin]    : Initializing Spring embedded WebApplicationContext
+2022-03-24 16:27:14.283  INFO 17392 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 696 ms
+2022-03-24 16:27:14.367  INFO 17392 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-24 16:27:14.379  INFO 17392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-03-24 16:27:14.385  INFO 17392 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-03-24 16:27:14.385  INFO 17392 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-03-24 16:27:14.889  INFO 17392 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-24 16:27:14.890  INFO 17392 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-24 16:27:14.913  WARN 17392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-24 16:27:15.395  WARN 17392 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-24 16:27:15.395  INFO 17392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2022-03-24 16:27:15.395  WARN 17392 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-24 16:27:15.395  INFO 17392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-03-24 16:27:15.395  WARN 17392 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-24 16:27:15.395  INFO 17392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2022-03-24 16:27:15.395  WARN 17392 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-03-24 16:27:15.395  INFO 17392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2022-03-24 16:27:15.415  INFO 17392 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-03-24 16:27:15.557  INFO 17392 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-03-24 16:27:16.821  INFO 17392 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-24 16:27:16.893  INFO 17392 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/MollaAdmin'
+2022-03-24 16:27:16.914  INFO 17392 --- [restartedMain] com.molla.admin.MollaBackEndApplication  : Started MollaBackEndApplication in 3.382 seconds (JVM running for 863.511)
+2022-03-24 16:27:16.920  INFO 17392 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

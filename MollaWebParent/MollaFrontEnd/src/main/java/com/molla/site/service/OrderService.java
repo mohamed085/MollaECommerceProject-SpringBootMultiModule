@@ -1,18 +1,33 @@
 package com.molla.site.service;
 
-import com.molla.common.entity.*;
-
-import com.molla.site.model.CheckoutInfo;
-import com.molla.site.repository.OrderRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import javax.transaction.Transactional;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+
+import javax.transaction.Transactional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+import com.molla.site.model.CheckoutInfo;
+import com.molla.common.entity.Address;
+import com.molla.common.entity.CartItem;
+import com.molla.common.entity.Customer;
+import com.molla.common.entity.Order;
+import com.molla.common.entity.OrderDetail;
+import com.molla.common.entity.OrderStatus;
+import com.molla.common.entity.OrderTrack;
+import com.molla.common.entity.PaymentMethod;
+import com.molla.common.entity.Product;
+import com.molla.site.error.OrderNotFoundException;
+import com.molla.site.repository.OrderRepository;
+import com.molla.site.util.OrderReturnRequest;
 
 @Service
 @Transactional
@@ -32,7 +47,13 @@ public class OrderService {
 
         Order newOrder = new Order();
         newOrder.setOrderTime(new Date());
-        newOrder.setStatus(OrderStatus.NEW);
+
+        if (paymentMethod.equals(PaymentMethod.PAYPAL)) {
+            newOrder.setStatus(OrderStatus.PAID);
+        } else {
+            newOrder.setStatus(OrderStatus.NEW);
+        }
+
         newOrder.setCustomer(customer);
         newOrder.setProductCost(checkoutInfo.getProductCost());
         newOrder.setSubtotal(checkoutInfo.getProductTotal());
@@ -50,20 +71,98 @@ public class OrderService {
         }
 
         Set<OrderDetail> orderDetails = newOrder.getOrderDetails();
-        cartItems.forEach(cartItem -> {
+
+        for (CartItem cartItem : cartItems) {
             Product product = cartItem.getProduct();
+
             OrderDetail orderDetail = new OrderDetail();
             orderDetail.setOrder(newOrder);
             orderDetail.setProduct(product);
             orderDetail.setQuantity(cartItem.getQuantity());
-            orderDetail.setUnitPrice(product.getPrice());
-            orderDetail.setProductCost(product.getPrice() * cartItem.getQuantity());
+            orderDetail.setUnitPrice(product.getDiscountPrice());
+            orderDetail.setProductCost(product.getCost() * cartItem.getQuantity());
             orderDetail.setSubtotal(cartItem.getSubtotal());
             orderDetail.setShippingCost(cartItem.getShippingCost());
 
             orderDetails.add(orderDetail);
-        });
+        }
+
+        OrderTrack track = new OrderTrack();
+        track.setOrder(newOrder);
+        track.setStatus(OrderStatus.NEW);
+        track.setNotes(OrderStatus.NEW.defaultDescription());
+        track.setUpdatedTime(new Date());
+
+        LOGGER.info("OrderService | createOrder | OrderTrack track : " + track.toString());
+
+        newOrder.getOrderTracks().add(track);
+
+        LOGGER.info("OrderService | createOrder | order : " + newOrder.toString());
 
         return repo.save(newOrder);
+    }
+
+    public Page<Order> listForCustomerByPage(Customer customer, int pageNum,
+                                             String sortField, String sortDir, String keyword) {
+
+        Sort sort = Sort.by(sortField);
+        sort = sortDir.equals("asc") ? sort.ascending() : sort.descending();
+
+        Pageable pageable = PageRequest.of(pageNum - 1, ORDERS_PER_PAGE, sort);
+
+        if (keyword != null) {
+            return repo.findAll(keyword, customer.getId(), pageable);
+        }
+
+        return repo.findAll(customer.getId(), pageable);
+
+    }
+
+    public Order getOrder(Integer id, Customer customer) {
+        return repo.findByIdAndCustomer(id, customer);
+    }
+
+
+    public void setOrderReturnRequested(OrderReturnRequest request, Customer customer)
+            throws OrderNotFoundException {
+
+        LOGGER.info("OrderService | setOrderReturnRequested is called");
+
+        LOGGER.info("OrderService | setOrderReturnRequested | OrderReturnRequest request : " + request.toString());
+        LOGGER.info("OrderService | setOrderReturnRequested | customer : " + customer.toString());
+
+
+        Order order = repo.findByIdAndCustomer(request.getOrderId(), customer);
+
+        if (order == null) {
+            throw new OrderNotFoundException("Order ID " + request.getOrderId() + " not found");
+        }
+
+
+
+        LOGGER.info("OrderService | setOrderReturnRequested | order.isReturnRequested() : " + order.isReturnRequested());
+
+        if (order.isReturnRequested()) return;
+
+        OrderTrack track = new OrderTrack();
+        track.setOrder(order);
+        track.setUpdatedTime(new Date());
+        track.setStatus(OrderStatus.RETURN_REQUESTED);
+
+        String notes = "Reason: " + request.getReason();
+        if (!"".equals(request.getNote())) {
+            notes += ". " + request.getNote();
+        }
+
+        track.setNotes(notes);
+
+        LOGGER.info("OrderService | setOrderReturnRequested | OrderTrack track : " + track.toString());
+
+        order.getOrderTracks().add(track);
+        order.setStatus(OrderStatus.RETURN_REQUESTED);
+
+        LOGGER.info("OrderService | setOrderReturnRequested | order : " + order.toString());
+
+        repo.save(order);
     }
 }
