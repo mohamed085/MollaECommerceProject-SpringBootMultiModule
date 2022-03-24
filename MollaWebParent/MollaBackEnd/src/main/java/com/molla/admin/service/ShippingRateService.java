@@ -5,6 +5,8 @@ import java.util.NoSuchElementException;
 
 import javax.transaction.Transactional;
 
+import com.molla.admin.repository.ProductRepository;
+import com.molla.common.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,16 +24,20 @@ import com.molla.common.exception.ShippingRateNotFoundException;
 public class ShippingRateService implements IShippingRateService{
 
     public static final int RATES_PER_PAGE = 10;
+    private static final int DIM_DIVISOR = 139;
 
     private ShippingRateRepository shipRepo;
 
     private CountryRepository countryRepo;
 
+    private ProductRepository productRepo;
+
     @Autowired
-    public ShippingRateService(ShippingRateRepository shipRepo, CountryRepository countryRepo) {
+    public ShippingRateService(ShippingRateRepository shipRepo, CountryRepository countryRepo,ProductRepository productRepo) {
         super();
         this.shipRepo = shipRepo;
         this.countryRepo = countryRepo;
+        this.productRepo = productRepo;
     }
 
     @Override
@@ -93,5 +99,21 @@ public class ShippingRateService implements IShippingRateService{
         shipRepo.deleteById(id);
     }
 
+    public float calculateShippingCost(Integer productId, Integer countryId, String state)
+            throws ShippingRateNotFoundException {
+        ShippingRate shippingRate = shipRepo.findByCountryAndState(countryId, state);
+
+        if (shippingRate == null) {
+            throw new ShippingRateNotFoundException("No shipping rate found for the given "
+                    + "destination. You have to enter shipping cost manually.");
+        }
+
+        Product product = productRepo.findById(productId).get();
+
+        float dimWeight = (product.getLength() * product.getWidth() * product.getHeight()) / DIM_DIVISOR;
+        float finalWeight = product.getWeight() > dimWeight ? product.getWeight() : dimWeight;
+
+        return finalWeight * shippingRate.getRate();
+    }
 }
 

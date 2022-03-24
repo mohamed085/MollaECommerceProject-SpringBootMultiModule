@@ -22,14 +22,10 @@ import com.molla.common.exception.ProductNotFoundException;
 @Service
 @Transactional
 public class ProductService implements IProductService{
-	
 	public static final int PRODUCTS_PER_PAGE = 5;
 
-	private final ProductRepository repo;
-
-	public ProductService(ProductRepository repo) {
-		this.repo = repo;
-	}
+	@Autowired
+	private ProductRepository repo;
 
 	@Override
 	public List<Product> listAll() {
@@ -52,9 +48,12 @@ public class ProductService implements IProductService{
 
 		product.setUpdatedTime(new Date());
 
-		return repo.save(product);
+		Product updatedProduct = repo.save(product);
+		repo.updateReviewCountAndAverageRating(updatedProduct.getId());
+
+		return updatedProduct;
 	}
-	
+
 	@Override
 	public String checkUnique(Integer id, String name) {
 		boolean isCreatingNew = (id == null || id == 0);
@@ -70,23 +69,23 @@ public class ProductService implements IProductService{
 
 		return "OK";
 	}
-	
+
 	@Override
 	public void updateProductEnabledStatus(Integer id, boolean enabled) {
 		repo.updateEnabledStatus(id, enabled);
 	}
-	
+
 	@Override
 	public void delete(Integer id) throws ProductNotFoundException {
 		Long countById = repo.countById(id);
 
 		if (countById == null || countById == 0) {
-			throw new ProductNotFoundException("Could not find any product with ID " + id);			
+			throw new ProductNotFoundException("Could not find any product with ID " + id);
 		}
 
 		repo.deleteById(id);
 	}
-	
+
 	@Override
 	public Product get(Integer id) throws ProductNotFoundException {
 		try {
@@ -98,13 +97,13 @@ public class ProductService implements IProductService{
 
 	@Override
 	public void listByPage(int pageNum, PagingAndSortingHelper helper, Integer categoryId) {
-		
+
 		Pageable pageable = helper.createPageable(PRODUCTS_PER_PAGE, pageNum);
 		String keyword = helper.getKeyword();
 		Page<Product> page = null;
 
 		if (keyword != null && !keyword.isEmpty()) {
-			
+
 			if (categoryId != null && categoryId > 0) {
 				String categoryIdMatch = "-" + String.valueOf(categoryId) + "-";
 				page = repo.searchInCategory(categoryId, categoryIdMatch, keyword, pageable);
@@ -115,14 +114,14 @@ public class ProductService implements IProductService{
 			if (categoryId != null && categoryId > 0) {
 				String categoryIdMatch = "-" + String.valueOf(categoryId) + "-";
 				page = repo.findAllInCategory(categoryId, categoryIdMatch, pageable);
-			} else {		
+			} else {
 				page = repo.findAll(pageable);
 			}
 		}
-		
+
 		helper.updateModelAttributes(pageNum, page);
 	}
-	
+
 	@Override
 	public void saveProductPrice(Product productInForm) {
 		Product productInDB = repo.findById(productInForm.getId()).get();
@@ -131,5 +130,12 @@ public class ProductService implements IProductService{
 		productInDB.setDiscountPercent(productInForm.getDiscountPercent());
 
 		repo.save(productInDB);
+	}
+
+	public void searchProducts(int pageNum, PagingAndSortingHelper helper) {
+		Pageable pageable = helper.createPageable(PRODUCTS_PER_PAGE, pageNum);
+		String keyword = helper.getKeyword();
+		Page<Product> page = repo.searchProductsByName(keyword, pageable);
+		helper.updateModelAttributes(pageNum, page);
 	}
 }

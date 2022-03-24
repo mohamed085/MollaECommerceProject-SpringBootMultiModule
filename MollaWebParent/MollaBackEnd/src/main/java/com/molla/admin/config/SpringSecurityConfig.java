@@ -56,6 +56,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .rememberMe()
                 .key("AbcDefgKLDSLmvop_0123456789")
                 .tokenValiditySeconds(7 * 24 * 60 * 60); // 7 days 24 hours 60 minutes 60 seconds -> 7days
+
+        http.headers().frameOptions().sameOrigin();
         ;
 
     }

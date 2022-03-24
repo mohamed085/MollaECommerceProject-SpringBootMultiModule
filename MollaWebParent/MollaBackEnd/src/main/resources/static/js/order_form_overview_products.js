@@ -44,7 +44,8 @@ function updateOrderAmounts() {
 
 
 		productCost = getNumberValueRemovedThousandSeparator(costInputField); 
-		totalCost += productCost * parseInt(quantityValue); 
+		totalCost += productCost * parseInt(quantityValue);
+		console.log(totalCost)
 	});
 
 	setAndFormatNumberForField("productCost", totalCost);
